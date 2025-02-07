@@ -108,3 +108,46 @@ export const MOVIES: IMovie[] = [
     image: "/images/movies/movie6.png",
   },
 ];
+
+export interface AccordionItem {
+  title: string;
+  content: string;
+}
+
+export const ACCORDION_ITEMS: AccordionItem[] = [
+  {
+    title: "Sinceridad",
+    content:
+      "“Pues consistiendo la amistad en hacer, por decirlo así, de varias alma una sola, ¿cómo podrá ser esto, si ni siquiera el alma de cada cual es una y siempre la misma, sino varia, mudable y con muchos pliegues” (Cicerón).",
+  },
+  {
+    title: "Lealtad",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+  },
+  {
+    title: "Compromiso",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+  },
+  {
+    title: "Flexibilidad",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+  },
+  {
+    title: "Conexión",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+  },
+  {
+    title: "Sencillez",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+  },
+  {
+    title: "Moldeable",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+  },
+];
