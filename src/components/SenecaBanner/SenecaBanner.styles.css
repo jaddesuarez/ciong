@@ -1,0 +1,7 @@
+.seneca-banner {
+    @apply bg-[url(/images/seneca-banner.png)] bg-cover bg-center bg-no-repeat;
+    @apply h-[520px] w-full;
+    @apply flex flex-col items-center justify-center gap-[30px];
+    @apply text-center;
+    @apply py-[100px] px-[80px];
+}
