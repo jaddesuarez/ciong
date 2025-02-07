@@ -1,0 +1,4 @@
+.nav-list-item {
+    @apply text-s-medium;
+    @apply text-black;
+}

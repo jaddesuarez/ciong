@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+    --color-white: rgba(var(--white));
+    --color-black: rgb(var(--black));
+    --color-yellow: rgb(var(--yellow));
+    --color-beige: rgb(var(--beige));
+    --color-purple: rgb(var(--purple));
+
+    --font-sans: var(--font-family-sans);
+
+    /* Small - 12px */
+    --text-s-medium: var(--text-s-medium);
+    --text-s-medium--line-height: var(--text-s-medium--line-height);
+    --text-s-medium--font-weight: var(--text-s-medium--font-weight);
+
+    /* Medium - 16px */
+    --text-m-regular: var(--text-m-regular);
+    --text-m-regular--line-height: var(--text-m-regular--line-height);
+    --text-m-regular--font-weight: var(--text-m-regular--font-weight);
+    --text-m-regular--letter-spacing: var(--text-m-regular--letter-spacing);
+
+    /* Large - 20px */
+    --text-l-regular: var(--text-l-regular);
+    --text-l-regular--line-height: var(--text-l-regular--line-height);
+    --text-l-regular--font-weight: var(--text-l-regular--font-weight);
+    --text-l-regular--letter-spacing: var(--text-l-regular--letter-spacing);
+
+    --text-l-bold: var(--text-l-bold);
+    --text-l-bold--line-height: var(--text-l-bold--line-height);
+    --text-l-bold--font-weight: var(--text-l-bold--font-weight);
+    --text-l-bold--letter-spacing: var(--text-l-bold--letter-spacing);
+
+    --text-l-heavy: var(--text-l-heavy);
+    --text-l-heavy--line-height: var(--text-l-heavy--line-height);
+    --text-l-heavy--font-weight: var(--text-l-heavy--font-weight);
+    --text-l-heavy--letter-spacing: var(--text-l-heavy--letter-spacing);
+
+    /* Extra Large - 24px */
+    --text-xl-bold: var(--text-xl-bold);
+    --text-xl-bold--line-height: var(--text-xl-bold--line-height);
+    --text-xl-bold--font-weight: var(--text-xl-bold--font-weight);
+    --text-xl-bold--letter-spacing: var(--text-xl-bold--letter-spacing);
+
+    /* XXL - 30px */
+    --text-xxl-heavy: var(--text-xxl-heavy);
+    --text-xxl-heavy--line-height: var(--text-xxl-heavy--line-height);
+    --text-xxl-heavy--font-weight: var(--text-xxl-heavy--font-weight);
+    --text-xxl-heavy--letter-spacing: var(--text-xxl-heavy--letter-spacing);
+
+    /* XXXL - 40px */
+    --text-xxxl-heavy: var(--text-xxxl-heavy);
+    --text-xxxl-heavy--line-height: var(--text-xxxl-heavy--line-height);
+    --text-xxxl-heavy--font-weight: var(--text-xxxl-heavy--font-weight);
+    --text-xxxl-heavy--letter-spacing: var(--text-xxxl-heavy--letter-spacing);
+
+    /* Display - 80px */
+    --text-display-heavy: var(--text-display-heavy);
+    --text-display-heavy--line-height: var(--text-display-heavy--line-height);
+    --text-display-heavy--font-weight: var(--text-display-heavy--font-weight);
+    --text-display-heavy--letter-spacing: var(--text-display-heavy--letter-spacing);
+}
+

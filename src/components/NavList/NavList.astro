@@ -1,0 +1,16 @@
+---
+import "./NavList.styles.css"
+import { NAVLINKS } from "../../consts"
+---
+
+<ul class="nav-list">
+  {
+    NAVLINKS.map((link) => (
+      <li>
+        <a class="nav-list-item" href={link.href}>
+          {link.text}
+        </a>
+      </li>
+    ))
+  }
+</ul>
