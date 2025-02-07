@@ -3,9 +3,9 @@ import { NAVLINKS } from "../../consts"
 import "./NavList.styles.css"
 ---
 
-<ul class="nav-list">
+<ul class="flex items-center gap-10">
   {
-    NAVLINKS.map((link) => (
+    NAVLINKS.map((link: { href: string; text: string }) => (
       <li>
         <a class="text-s-medium text-black uppercase" href={link.href}>
           {link.text}

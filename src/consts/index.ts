@@ -1,4 +1,9 @@
-export const NAVLINKS = [
+interface NavLink {
+  href: string;
+  text: string;
+}
+
+export const NAVLINKS: NavLink[] = [
   {
     href: "/",
     text: "La esencia",
@@ -19,4 +24,4 @@ export const NAVLINKS = [
     href: "/",
     text: "Recursos",
   },
-]
+];

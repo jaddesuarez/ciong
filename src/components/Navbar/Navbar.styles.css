@@ -1,4 +1,0 @@
-.navbar-container {
-    @apply flex items-center justify-between;
-    @apply px-[80px] py-[25px];
-}
