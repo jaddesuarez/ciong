@@ -1,4 +1,3 @@
-.nav-list-item {
-    @apply text-s-medium;
-    @apply text-black;
+.nav-list {
+    @apply flex items-center gap-[60px];
 }
