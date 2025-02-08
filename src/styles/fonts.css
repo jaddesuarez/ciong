@@ -40,6 +40,11 @@
     --text-l-heavy--font-weight: 800;
     --text-l-heavy--letter-spacing: -0.6px;
 
+    --text-l-heavy-tall: 20px;
+    --text-l-heavy-tall--line-height: 40px;
+    --text-l-heavy-tall--font-weight: 800;
+    --text-l-heavy-tall--letter-spacing: -2px;
+
     /* Extra Large - 24px */
     --text-xl-bold: 24px;
     --text-xl-bold--line-height: 24px;
@@ -53,6 +58,11 @@
     --text-xxl-heavy--letter-spacing: -0.5px;
 
     /* XXXL - 40px */
+    --text-large-heavy: 36px;
+    --text-large-heavy--line-height: 36px;
+    --text-large-heavy--font-weight: 800;
+    --text-large-heavy--letter-spacing: -2px;
+
     --text-xxxl-heavy: 40px;
     --text-xxxl-heavy--line-height: 40px;
     --text-xxxl-heavy--font-weight: 800;

@@ -1,6 +1,6 @@
 interface NavLink {
-  href: string;
-  text: string;
+  href: string
+  text: string
 }
 
 export const NAVLINKS: NavLink[] = [
@@ -24,4 +24,19 @@ export const NAVLINKS: NavLink[] = [
     href: "/",
     text: "Recursos",
   },
-];
+]
+
+export const INDEX_GROUPS = [
+  ["los de toda la vida", "los puntuales"],
+  [
+    "los que me resultan útiles",
+    "con los que me divierto",
+    "los que más quiero",
+  ],
+  [
+    "los de verano",
+    "los de clase",
+    "con los que hago deporte",
+    "los de mi familia",
+  ],
+]

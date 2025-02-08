@@ -1,0 +1,45 @@
+---
+import "./TypesOfFriendShipBanner.styles.css"
+import Frame from "../Frame/Frame.astro"
+import { INDEX_GROUPS } from "@/consts/index"
+
+let overallIndex = 0
+---
+
+<section class="types-of-friend-ship-banner bg-beige">
+  <h2 class="text-display-heavy text-center uppercase flex flex-col">
+    <span class="text-black">Tipos de</span>
+    <span class="text-purple">amistad</span>
+  </h2>
+
+  <div class="flex justify-between items-center w-full">
+    <div class="flex flex-col list-none">
+      {
+        INDEX_GROUPS.map((group) => {
+          return (
+            <ul class="flex flex-col gap-1 border-black border-b border-pure-black last:border-b-0 pb-5 pt-5 first:pt-0">
+              {group.map((item) => {
+                overallIndex++
+                return (
+                  <li class="text-large-heavy text-black hover:text-purple flex items-center gap-[10px] uppercase">
+                    <span class="text-l-heavy-tall">0</span>
+                    <span>[{item}]</span>
+                    <span class="text-l-heavy-tall">{overallIndex}</span>
+                  </li>
+                )
+              })}
+            </ul>
+          )
+        })
+      }
+    </div>
+
+    <Frame
+      padding={{ top: "pt-[10px]", bottom: "pb-[30px]", lateral: "px-[10px]" }}
+      dimensions={{ width: "w-[305px]", height: "h-[426px]" }}
+      image="/images/kids.avif"
+      bg="bg-yellow"
+      rotation={8.936}
+    />
+  </div>
+</section>

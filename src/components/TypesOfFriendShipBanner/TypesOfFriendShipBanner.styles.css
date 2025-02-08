@@ -1,0 +1,5 @@
+.types-of-friend-ship-banner {
+  @apply py-[100px] px-[80px];
+  @apply flex flex-col items-center gap-[60px];
+}
+

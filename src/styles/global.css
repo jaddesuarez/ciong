@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  --color-pure-black: rgb(var(--pure-black));
   --color-white: rgba(var(--white));
   --color-black: rgb(var(--black));
   --color-yellow: rgb(var(--yellow));
@@ -36,6 +37,11 @@
   --text-l-heavy--font-weight: var(--text-l-heavy--font-weight);
   --text-l-heavy--letter-spacing: var(--text-l-heavy--letter-spacing);
 
+  --text-l-heavy-tall: var(--text-l-heavy-tall);
+  --text-l-heavy-tall--line-height: var(--text-l-heavy-tall--line-height);
+  --text-l-heavy-tall--font-weight: var(--text-l-heavy-tall--font-weight);
+  --text-l-heavy-tall--letter-spacing: var(--text-l-heavy-tall--letter-spacing);
+
   /* Extra Large - 24px */
   --text-xl-bold: var(--text-xl-bold);
   --text-xl-bold--line-height: var(--text-xl-bold--line-height);
@@ -47,6 +53,12 @@
   --text-xxl-heavy--line-height: var(--text-xxl-heavy--line-height);
   --text-xxl-heavy--font-weight: var(--text-xxl-heavy--font-weight);
   --text-xxl-heavy--letter-spacing: var(--text-xxl-heavy--letter-spacing);
+
+  /* Large - 36px */
+  --text-large-heavy: var(--text-large-heavy);
+  --text-large-heavy--line-height: var(--text-large-heavy--line-height);
+  --text-large-heavy--font-weight: var(--text-large-heavy--font-weight);
+  --text-large-heavy--letter-spacing: var(--text-large-heavy--letter-spacing);
 
   /* XXXL - 40px */
   --text-xxxl-heavy: var(--text-xxxl-heavy);
