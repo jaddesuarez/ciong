@@ -1,1 +1,10 @@
-/* HeroSection styles */
+.hero {
+  @apply pb-[100px] px-[80px] pt-[50px];
+}
+
+.hero-content {
+  @apply bg-[url(/images/hero/hero-bg.png)] bg-cover bg-center bg-no-repeat;
+  @apply w-[1250px] h-[630px];
+  @apply flex flex-col items-center justify-center;
+  @apply text-[color:rgba(var(--black))];
+}

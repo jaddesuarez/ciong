@@ -2,8 +2,26 @@
 import "./Section1.styles.css"
 ---
 
-<section>
-  <div>
-    <!-- Section1 content -->
+<section class="section1">
+  <div class="flex flex-col items-center justify-center">
+    <div class="flex flex-col items-center mb-15">
+      <h1 class="text-display-heavy text-beige uppercase">La escencia de</h1>
+      <h1 class="text-display-heavy text-yellow uppercase">La amistad</h1>
+      <p class="text-l-regular text-beige uppercase max-w-[600px]">"No somos amigos sólo porque compartimos grandes cosas, sino que, como somos amigos, cada cosa que compartimos se vuelve grande."</p>
+    </div>
+    <div class="video-container relative">
+      <div class="border-yellow border-[20px] border-b-[60px] relative">
+        <iframe
+          class="w-[800px] aspect-video"
+          src="https://www.youtube.com/embed/4hdku3zFoHA"
+          title="Video de amistad"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <p class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-purple text-l-bold uppercase">
+          Ver vídeo
+        </p>
+      </div>
+    </div>
   </div>
 </section> 

@@ -1,0 +1,78 @@
+---
+import "./Section4.styles.css"
+import { ACCORDION_ITEMS } from "@/consts/index"
+---
+
+<section class="section4">
+  <div class="flex flex-col items-center justify-center w-full">
+    <div class="flex flex-col items-center mb-10 md:mb-20">
+      <h1
+        class="text-xl-bold md:text-xxl-heavy lg:text-display-heavy text-beige uppercase"
+      >
+        Cualidades
+      </h1>
+      <h1
+        class="text-xl-bold md:text-xxl-heavy lg:text-display-heavy text-yellow uppercase"
+      >
+        Para ser amado
+      </h1>
+    </div>
+
+    <div class="w-full">
+      {
+        ACCORDION_ITEMS.map((item, index) => (
+          <div class="text-beige">
+            <hr class="border-beige/70" />
+            <button
+              class="py-3 md:py-5 accordion-trigger w-full text-left text-l-bold md:text-xxl-heavy flex justify-between items-center uppercase"
+              aria-expanded="false"
+              aria-controls={`accordion-${index}`}
+            >
+              {item.title}
+              <img
+                src="/svg/arrow-down.svg"
+                alt="Toggle"
+                class="w-6 h-6 transition-transform duration-200 accordion-icon"
+              />
+            </button>
+            <div
+              id={`accordion-${index}`}
+              class="accordion-content hidden pb-2 md:pb-4 max-w-[1000px]"
+            >
+              <p class="text-s-regular md:text-l-regular">{item.content}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll(".accordion-trigger").forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const content = trigger.nextElementSibling
+      const isExpanded = trigger.getAttribute("aria-expanded") === "true"
+      const icon = trigger.querySelector(".accordion-icon") as HTMLImageElement
+
+      // Close all other accordions
+      document.querySelectorAll(".accordion-trigger").forEach((t) => {
+        if (t !== trigger) {
+          t.setAttribute("aria-expanded", "false")
+          t.nextElementSibling?.classList.add("hidden")
+          const otherIcon = t.querySelector(
+            ".accordion-icon"
+          ) as HTMLImageElement
+          if (otherIcon) otherIcon.src = "/svg/arrow-down.svg"
+        }
+      })
+
+      // Toggle current accordion
+      trigger.setAttribute("aria-expanded", (!isExpanded).toString())
+      content?.classList.toggle("hidden")
+      if (icon) {
+        icon.src = isExpanded ? "/svg/arrow-down.svg" : "/svg/arrow-up.svg"
+      }
+    })
+  })
+</script>

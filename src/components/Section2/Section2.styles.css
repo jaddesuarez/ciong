@@ -1,1 +1,21 @@
-/* Section2 styles */
+.section2 {
+  padding: 50px 20px;
+}
+
+@media (min-width: 768px) {
+  .section2 {
+    padding: 100px 80px;
+  }
+}
+
+.section2-content {
+  @apply w-full;
+  @apply flex flex-col items-center justify-center;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .section2-content {
+    gap: 60px;
+  }
+}
