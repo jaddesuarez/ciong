@@ -2,11 +2,11 @@
 import "./Footer.styles.css"
 ---
 
-<footer class="px-20 py-10 mt-auto bg-yellow">
-  <div class="">
-    <div class="flex justify-between">
+<footer class="px-5 md:px-20 py-10 mt-auto bg-yellow">
+  <div>
+    <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 lg:justify-between">
       <div>
-        <h1 class="text-xxl-heavy text-black uppercase">Otras webs de CI</h1>
+        <h1 class="text-xl-bold md:text-xxl-heavy text-black uppercase">Otras webs de CI</h1>
         <ul class="flex flex-col gap-1 mt-5">
           <li class="text-m-regular text-black underline uppercase">
             <a href="https://livingforothers.ciong.org/" target="_blank" rel="noopener noreferrer">Dignidad</a>
@@ -29,7 +29,7 @@ import "./Footer.styles.css"
         </ul>
       </div>
       <div>
-        <h1 class="text-xxl-heavy text-black uppercase">Otras campañas</h1>
+        <h1 class="text-xl-bold md:text-xxl-heavy text-black uppercase">Otras campañas</h1>
         <ul class="flex flex-col gap-1 mt-5">
             <li class="text-m-regular text-black underline uppercase"><a href="https://www.youtube.com/watch?v=4hdku3zFoHA" target="_blank" rel="noopener noreferrer">La junventud no está mal</a></li>
             <li class="text-m-regular text-black"><a class="underline uppercase" href="https://www.youtube.com/watch?v=f_suvFImORg" target="_blank" rel="noopener noreferrer">Rompe la cadena.</a><p>(Spot de inmigración)</p></li>
@@ -37,7 +37,7 @@ import "./Footer.styles.css"
         </ul>
       </div>
       <div>
-        <h1 class="text-xxl-heavy text-black uppercase">Síguenos</h1>
+        <h1 class="text-xl-bold md:text-xxl-heavy text-black uppercase">Síguenos</h1>
         <ul class="flex flex-col gap-1 mt-5">
           <li class="text-m-regular text-black uppercase">
             <a href="https://ciong.org/" class="flex items-center gap-2" target="_blank" rel="noopener noreferrer">
@@ -98,11 +98,16 @@ import "./Footer.styles.css"
         </ul>
       </div>
     </div>
-    <div class="flex gap-20 my-10">
-      <img src="/svg/COING-logo.svg" alt="Cooperacion Internacional" />
-      <img src="/svg/IYC-logo.svg" alt="Internacional Youth Cooperation" />
-      <img src="/svg/LFO-logo.svg" alt="Living for Others" />
-      <img class="h-[50px] mix-blend-multiply" src="/images/GOB-logo.png" alt="Gobierno de España" />
+
+    <div class="flex flex-col sm:flex-row lg:justify-start items-center gap-10 my-10 flex-wrap justify-center">
+      <img src="/svg/COING-logo.svg" alt="Cooperacion Internacional" class="h-[40px] md:h-auto" />
+      <img src="/svg/IYC-logo.svg" alt="Internacional Youth Cooperation" class="h-[40px] md:h-auto" />
+      <img src="/svg/LFO-logo.svg" alt="Living for Others"/>
+      <img 
+        class="h-[80px] md:h-[40px] mix-blend-multiply" 
+        src="/images/GOB-logo.png" 
+        alt="Gobierno de España" 
+      />
     </div>
   </div>
 </footer>
