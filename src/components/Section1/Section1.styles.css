@@ -1,7 +1,14 @@
 .section1 {
   @apply relative w-full;
   @apply flex flex-col items-center justify-center gap-[30px];
-  @apply text-center py-[100px] px-[80px];
+  @apply text-center;
+  padding: 2.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .section1 {
+    padding: 100px 80px;
+  }
 }
 
 .section1::before {
@@ -16,8 +23,4 @@
 
 .section1 > * {
   @apply relative z-10;
-}
-
-.video-container {
-  @apply flex flex-col items-center mb-[40px];
 }
