@@ -1,5 +1,4 @@
 ---
-import "./Section5.styles.css"
 import BookMovieCard from "../BookMovieCard/BookMovieCard.astro"
 import { BOOKS, MOVIES } from "@/consts/index"
 import type { IBook, IMovie } from "@/consts/index"
@@ -8,53 +7,83 @@ import type { IBook, IMovie } from "@/consts/index"
 <section class="py-[50px] md:py-[100px] px-[20px] md:px-[80px]">
   <div class="flex flex-col gap-10 md:gap-20">
     <div class="flex flex-col items-center mb-5 md:mb-10">
-      <h1 class="text-xxl-heavy md:text-display-heavy text-black uppercase text-center">
+      <h1
+        class="text-xxl-heavy md:text-display-heavy text-black uppercase text-center"
+      >
         Para reflexionar
       </h1>
-      <h1 class="text-xxl-heavy md:text-display-heavy text-purple uppercase text-center">
+      <h1
+        class="text-xxl-heavy md:text-display-heavy text-purple uppercase text-center"
+      >
         Y aprender
       </h1>
     </div>
 
     <div class="flex flex-col items-center gap-8 md:gap-15">
-      <p class="text-xl-bold md:text-xxxl-heavy text-purple uppercase text-center">
+      <p
+        class="text-xl-bold md:text-xxxl-heavy text-purple uppercase text-center"
+      >
         [Libros que merecen la pena]
       </p>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 w-full">
-        {BOOKS.map((book: IBook) => (
-          <div class="max-w-[160px] sm:max-w-[200px] md:max-w-none mx-auto w-full">
-            <BookMovieCard image={book.image} title={`"${book.title}"`} info={book.author} />
-          </div>
-        ))}
+        {
+          BOOKS.map((book: IBook) => (
+            <div class="max-w-[160px] sm:max-w-[200px] md:max-w-none mx-auto w-full">
+              <BookMovieCard
+                image={book.image}
+                title={`"${book.title}"`}
+                info={book.author}
+              />
+            </div>
+          ))
+        }
       </div>
     </div>
 
     <hr class="w-full border-black/20 mb-5 md:mb-10" />
 
     <div class="flex flex-col items-center gap-8 md:gap-15">
-      <p class="text-xl-bold md:text-xxxl-heavy text-purple uppercase text-center">
+      <p
+        class="text-xl-bold md:text-xxxl-heavy text-purple uppercase text-center"
+      >
         [Películas que me inspiran]
       </p>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 w-full">
-        {MOVIES.map((movie: IMovie) => (
-          <div class="max-w-[160px] sm:max-w-[200px] md:max-w-none mx-auto w-full">
-            <BookMovieCard image={movie.image} title={movie.title} info={`(${movie.year})`} />
-          </div>
-        ))}
+        {
+          MOVIES.map((movie: IMovie) => (
+            <div class="max-w-[160px] sm:max-w-[200px] md:max-w-none mx-auto w-full">
+              <BookMovieCard
+                image={movie.image}
+                title={movie.title}
+                info={`(${movie.year})`}
+              />
+            </div>
+          ))
+        }
       </div>
     </div>
 
     <hr class="w-full border-black/20 mb-5 md:mb-10" />
 
     <div class="flex flex-col items-center gap-8 md:gap-15">
-      <p class="text-xl-bold md:text-xxxl-heavy text-purple uppercase text-center">
+      <p
+        class="text-xl-bold md:text-xxxl-heavy text-purple uppercase text-center"
+      >
         [Descargables]
       </p>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 w-full">
-        <div class="max-w-[160px] sm:max-w-[200px] md:max-w-none mx-auto w-full">
-          <BookMovieCard image={'/images/pdf.png'} title={''} info={'Descargable'} link={'/images/book1.pdf'} />
+        <div
+          class="max-w-[160px] sm:max-w-[200px] md:max-w-none mx-auto w-full"
+        >
+          <BookMovieCard
+            image={"/images/pdf.png"}
+            title={""}
+            info={"Descargable"}
+            link={"/images/book1.pdf"}
+          />
         </div>
       </div>
     </div>
   </div>
-</section> 
+</section>
+

@@ -1,6 +1,6 @@
 interface NavLink {
-  href: string;
-  text: string;
+  href: string
+  text: string
 }
 
 export const NAVLINKS: NavLink[] = [
@@ -24,12 +24,27 @@ export const NAVLINKS: NavLink[] = [
     href: "/",
     text: "Recursos",
   },
-];
+]
+
+export const INDEX_GROUPS = [
+  ["los de toda la vida", "los puntuales"],
+  [
+    "los que me resultan útiles",
+    "con los que me divierto",
+    "los que más quiero",
+  ],
+  [
+    "los de verano",
+    "los de clase",
+    "con los que hago deporte",
+    "los de mi familia",
+  ],
+]
 
 export interface IBook {
-  title: string;
-  author: string;
-  image: string;
+  title: string
+  author: string
+  image: string
 }
 
 export const BOOKS: IBook[] = [
@@ -68,12 +83,12 @@ export const BOOKS: IBook[] = [
     author: "de Dale Carnegie",
     image: "/images/books/book7.png",
   },
-];
+]
 
 export interface IMovie {
-  title: string;
-  year: string;
-  image: string;
+  title: string
+  year: string
+  image: string
 }
 
 export const MOVIES: IMovie[] = [
@@ -107,11 +122,11 @@ export const MOVIES: IMovie[] = [
     year: "1989",
     image: "/images/movies/movie6.png",
   },
-];
+]
 
 export interface AccordionItem {
-  title: string;
-  content: string;
+  title: string
+  content: string
 }
 
 export const ACCORDION_ITEMS: AccordionItem[] = [
@@ -150,13 +165,13 @@ export const ACCORDION_ITEMS: AccordionItem[] = [
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
   },
-];
+]
 
 export interface IFriendshipImage {
-  image: string;
-  text: string;
-  colorText: string;
-  rotation: string;
+  image: string
+  text: string
+  colorText: string
+  rotation: string
 }
 
 export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
@@ -208,4 +223,4 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     colorText: "No se consigue a golpe de clicks.",
     rotation: "-6.16deg",
   },
-];
+]
