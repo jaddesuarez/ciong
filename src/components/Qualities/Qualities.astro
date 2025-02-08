@@ -24,7 +24,7 @@ import { ACCORDION_ITEMS } from "@/consts/index"
           <div class="text-beige">
             <hr class="border-beige/70" />
             <button
-              class="py-3 md:py-5 accordion-trigger w-full text-left text-l-bold md:text-xxl-heavy flex justify-between items-center uppercase"
+              class="py-3 md:py-5 accordion-trigger w-full text-left text-l-bold md:text-xxl-heavy flex justify-between items-center uppercase cursor-pointer"
               aria-expanded="false"
               aria-controls={`accordion-${index}`}
             >
@@ -37,9 +37,11 @@ import { ACCORDION_ITEMS } from "@/consts/index"
             </button>
             <div
               id={`accordion-${index}`}
-              class="accordion-content hidden pb-2 md:pb-4 max-w-[1000px]"
+              class="accordion-content max-w-[1000px]"
             >
-              <p class="text-s-regular md:text-l-regular">{item.content}</p>
+              <p class="text-s-regular text-left md:text-l-regular">
+                {item.content}
+              </p>
             </div>
           </div>
         ))
@@ -59,7 +61,7 @@ import { ACCORDION_ITEMS } from "@/consts/index"
       document.querySelectorAll(".accordion-trigger").forEach((t) => {
         if (t !== trigger) {
           t.setAttribute("aria-expanded", "false")
-          t.nextElementSibling?.classList.add("hidden")
+          t.nextElementSibling?.classList.remove("expanded")
           const otherIcon = t.querySelector(
             ".accordion-icon"
           ) as HTMLImageElement
@@ -69,7 +71,7 @@ import { ACCORDION_ITEMS } from "@/consts/index"
 
       // Toggle current accordion
       trigger.setAttribute("aria-expanded", (!isExpanded).toString())
-      content?.classList.toggle("hidden")
+      content?.classList.toggle("expanded")
       if (icon) {
         icon.src = isExpanded ? "/svg/arrow-down.svg" : "/svg/arrow-up.svg"
       }

@@ -14,10 +14,16 @@
     --text-m-regular--font-weight: 500;
     --text-m-regular--letter-spacing: -0.5px;
 
+    /* buscar tipografía repetida... */
     --text-m-regular: 16px;
     --text-m-regular--line-height: 26px;
     --text-m-regular--font-weight: 500;
     --text-m-regular--letter-spacing: -1px;
+
+    --text-m-bold-small: 16px;
+    --text-m-bold-small--line-height: 16px;
+    --text-m-bold-small--font-weight: 700;
+    --text-m-bold-small--letter-spacing: -1px;
 
     /* Large - 20px */
     --text-l-regular: 20px;
@@ -34,6 +40,11 @@
     --text-l-bold--line-height: 26px;
     --text-l-bold--font-weight: 700;
     --text-l-bold--letter-spacing: -1px;
+    
+    --text-l-bold-small: 20px;
+    --text-l-bold-small--line-height: 20px;
+    --text-l-bold-small--font-weight: 700;
+    --text-l-bold-small--letter-spacing: -1px;
 
     --text-l-heavy: 20px;
     --text-l-heavy--line-height: 18px;

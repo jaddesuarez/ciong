@@ -17,3 +17,14 @@
 .qualities > * {
   @apply relative z-10;
 }
+
+.accordion-content {
+  @apply max-h-[0px] overflow-hidden;
+  @apply opacity-0;
+  @apply transition-all duration-300;
+}
+
+.accordion-content.expanded {
+  @apply max-h-[1000px] opacity-100;
+  @apply pb-[30px];
+}

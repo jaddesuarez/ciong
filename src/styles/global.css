@@ -21,6 +21,11 @@
   --text-m-regular--font-weight: var(--text-m-regular--font-weight);
   --text-m-regular--letter-spacing: var(--text-m-regular--letter-spacing);
 
+  --text-m-bold-small: var(--text-m-bold-small);
+  --text-m-bold-small--line-height: var(--text-m-bold-small--line-height);
+  --text-m-bold-small--font-weight: var(--text-m-bold-small--font-weight);
+  --text-m-bold-small--letter-spacing: var(--text-m-bold-small--letter-spacing);
+
   /* Large - 20px */
   --text-l-regular: var(--text-l-regular);
   --text-l-regular--line-height: var(--text-l-regular--line-height);
@@ -31,6 +36,11 @@
   --text-l-bold--line-height: var(--text-l-bold--line-height);
   --text-l-bold--font-weight: var(--text-l-bold--font-weight);
   --text-l-bold--letter-spacing: var(--text-l-bold--letter-spacing);
+
+  --text-l-bold-small: var(--text-l-bold-small);
+  --text-l-bold-small--line-height: var(--text-l-bold-small--line-height);
+  --text-l-bold-small--font-weight: var(--text-l-bold-small--font-weight);
+  --text-l-bold-small--letter-spacing: var(--text-l-bold-small--letter-spacing);
 
   --text-l-heavy: var(--text-l-heavy);
   --text-l-heavy--line-height: var(--text-l-heavy--line-height);

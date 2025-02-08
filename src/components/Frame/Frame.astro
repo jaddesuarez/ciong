@@ -11,6 +11,7 @@ interface IFrameProps {
     bottom?: string
     lateral?: string
   }
+  className?: string
 }
 
 const props = Astro.props as IFrameProps
@@ -20,12 +21,13 @@ const {
   bg = "bg-white",
   rotation = 0,
   padding = { top: "pt-4", bottom: "pb-5", lateral: "px-4" },
+  className,
 } = props
 ---
 
 <div
-  style={`transform: rotate(${rotation}deg);`}
-  class={`frameContainer ${dimensions.width} ${dimensions.height} ${bg} ${padding.lateral} ${padding.top} ${padding.bottom}`}
+  style={`transform: rotate(${rotation}deg)`}
+  class={`frameContainer ${dimensions.width} ${dimensions.height} ${bg} ${padding.lateral} ${padding.top} ${padding.bottom} ${className}`}
 >
   <slot />
 </div>

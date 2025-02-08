@@ -10,12 +10,6 @@
 
 .what-is-friendship-content {
   @apply w-full;
-  @apply flex flex-col items-center justify-center;
-  gap: 30px;
+  @apply flex flex-col items-center justify-center gap-[60px];
 }
 
-@media (min-width: 768px) {
-  .what-is-friendship-content {
-    gap: 60px;
-  }
-}

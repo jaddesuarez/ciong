@@ -1,3 +1,5 @@
+import type { JSX } from "astro/jsx-runtime"
+
 interface NavLink {
   href: string
   text: string
@@ -167,61 +169,104 @@ export const ACCORDION_ITEMS: AccordionItem[] = [
   },
 ]
 
-export interface IFriendshipImage {
+interface IFriendshipImage {
   image: string
   text: string
-  colorText: string
-  rotation: string
+  rotation?: number
+  element?: JSX.Element
+  width?: string
+  height?: string
 }
 
 export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
   {
     image: "/images/section2/img1.png",
-    text: "Se encuentra no se compra.",
-    colorText: "Un tesoro.",
-    rotation: "-6.22deg",
+    element: `<p class="text-l-bold-small text-center">
+        <span class="text-purple">Un tesoro.</span>
+        <span class="text-black"> Se encuentra no se compra.</span>
+      </p>`,
+    text: "Un tesoro. Se encuentra no se compra.",
+    rotation: -6.22,
+    width: "w-[306px]",
+    height: "h-[294px]",
   },
   {
     image: "/images/section2/img2.png",
-    text: "A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.",
-    colorText: "Un premio de Lotería.",
-    rotation: "0deg",
+    element: `<p class="text-m-bold-small text-center">
+        <span class="text-purple">Un premio de Lotería.</span>
+        <span class="text-black">A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.</span>
+      </p>`,
+    text: "Un premio de Lotería. A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.",
+    width: "w-[306px]",
+    height: "h-[330px]",
   },
   {
     image: "/images/section2/img3.png",
-    text: "Y nos enseña quiénes somos realmente.",
-    colorText: "Nos hace ser nosotros mismos.",
-    rotation: "12.78deg",
+    element: `<p class="text-l-bold-small text-center">
+        <span class="text-purple">Nos hace ser nosotros mismos.</span>
+        <span class="text-black"> Y nos enseña quiénes somos realmente.</span>
+      </p>`,
+    text: "Nos hace ser nosotros mismos. Y nos enseña quiénes somos realmente.",
+    rotation: 12.78,
+    width: "w-[280px]",
+    height: "h-[294px]",
   },
   {
     image: "/images/section2/img4.png",
-    text: "Darse sin buscar nada a cambio, hacer favores, dedicar tiempo.",
-    colorText: "Servicio.",
-    rotation: "0deg",
+    element: `<p class="text-m-bold-small text-center">
+        <span class="text-purple">Servicio.</span>
+        <span class="text-black">
+          Darse sin buscar nada a cambio, hacer favores, dedicar tiempo.
+        </span>
+      </p>`,
+    text: "Servicio. Darse sin buscar nada a cambio, hacer favores, dedicar tiempo.",
+    width: "w-[266px]",
+    height: "h-[253px]",
   },
   {
     image: "/images/section2/img5.png",
-    text: "Que no se rebaja a ser colega.",
-    colorText: "Algo que nos hace mejores.",
-    rotation: "12.78deg",
+    element: `<p class="text-l-bold-small text-center">
+        <span class="text-purple">Algo que nos hace mejores.</span>
+        <span class="text-black"> Que no se rebaja a ser colega.</span>
+      </p>`,
+    text: "Algo que nos hace mejores. Que no se rebaja a ser colega.",
+    rotation: 12.78,
+    width: "w-[280px]",
+    height: "h-[294px]",
   },
   {
     image: "/images/section2/img6.png",
-    text: "No se cierra, no es posesiva, no se diluye al compartirla.",
-    colorText: "Una amistad es abierta.",
-    rotation: "-6.22deg",
+    element: `<p class="text-m-bold-small text-center">
+        <span class="text-purple">Una amistad es abierta.</span>
+        <span class="text-black">
+          No se cierra, no es posesiva, no se diluye al compartirla.
+        </span>
+      </p>`,
+    text: "Una amistad es abierta. No se cierra, no es posesiva, no se diluye al compartirla.",
+    rotation: -6.22,
+    width: "w-[306px]",
+    height: "h-[302px]",
   },
   {
     image: "/images/section2/img7.png",
-    text: "Comienza dónde termina el interés.",
-    colorText: "Una amistad es gratis.",
-    rotation: "0deg",
+    element: `<p class="text-l-bold-small text-center">
+        <span class="text-purple">Una amistad es gratis.</span>
+        <span class="text-black">Comienza dónde termina el interés.</span>
+      </p>`,
+    text: "Una amistad es gratis. Comienza dónde termina el interés.",
+    width: "w-[266px]",
+    height: "h-[266px]",
   },
   {
     image: "/images/section2/img8.png",
-    text: "Hace falta salir y lleva tiempo.",
-    colorText: "No se consigue a golpe de clicks.",
-    rotation: "-6.16deg",
+    element: `<p class="text-l-bold-small text-center">
+        <span class="text-purple">No se consigue a golpe de clicks.</span>
+        <span class="text-black">Hace falta salir y lleva tiempo.</span>
+      </p>`,
+    text: "No se consigue a golpe de clicks. Hace falta salir y lleva tiempo.",
+    rotation: -6.16,
+    width: "w-[260px]",
+    height: "h-[343px]",
   },
 ]
 
