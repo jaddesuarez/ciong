@@ -5,9 +5,9 @@ import { ACCORDION_ITEMS } from "@/consts/index";
 
 <section class="section4">
   <div class="flex flex-col items-center justify-center w-full">
-    <div class="flex flex-col items-center mb-20">
-      <h1 class="text-display-heavy text-beige uppercase">Cualidades</h1>
-      <h1 class="text-display-heavy text-yellow uppercase">Para ser amado</h1>
+    <div class="flex flex-col items-center mb-10 md:mb-20">
+      <h1 class="text-xl-bold md:text-xxl-heavy lg:text-display-heavy text-beige uppercase">Cualidades</h1>
+      <h1 class="text-xl-bold md:text-xxl-heavy lg:text-display-heavy text-yellow uppercase">Para ser amado</h1>
     </div>
 
     <div class="w-full">
@@ -15,7 +15,7 @@ import { ACCORDION_ITEMS } from "@/consts/index";
         <div class="text-beige">
           <hr class="border-beige/70" />
           <button
-            class="py-5 accordion-trigger w-full text-left text-xxl-heavy flex justify-between items-center uppercase"
+            class="py-3 md:py-5 accordion-trigger w-full text-left text-l-bold md:text-xxl-heavy flex justify-between items-center uppercase"
             aria-expanded="false"
             aria-controls={`accordion-${index}`}
           >
@@ -28,9 +28,9 @@ import { ACCORDION_ITEMS } from "@/consts/index";
           </button>
           <div
             id={`accordion-${index}`}
-            class="accordion-content hidden pb-4 max-w-[1000px]"
+            class="accordion-content hidden pb-2 md:pb-4 max-w-[1000px]"
           >
-            <p class="text-l-regular">{item.content}</p>
+            <p class="text-s-regular md:text-l-regular">{item.content}</p>
           </div>
         </div>
       ))}
