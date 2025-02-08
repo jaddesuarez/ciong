@@ -25,10 +25,10 @@
     --text-l-regular--font-weight: 500;
     --text-l-regular--letter-spacing: -0.5px;
 
-    --text-l-regular: 20px;
-    --text-l-regular--line-height: 26px;
-    --text-l-regular--font-weight: 500;
-    --text-l-regular--letter-spacing: -1px;
+    --text-l-regular-small: 20px;
+    --text-l-regular-small--line-height: 18px;
+    --text-l-regular-small--font-weight: 500;
+    --text-l-regular-small--letter-spacing: -0.5px;
 
     --text-l-bold: 20px;
     --text-l-bold--line-height: 26px;
@@ -44,6 +44,13 @@
     --text-l-heavy-tall--line-height: 40px;
     --text-l-heavy-tall--font-weight: 800;
     --text-l-heavy-tall--letter-spacing: -2px;
+
+    /* Large - 22 */
+
+    --text-l-heavy-tall-small: 22px;
+    --text-l-heavy-tall-small--line-height: 20px;
+    --text-l-heavy-tall-small--font-weight: 800;
+    --text-l-heavy-tall-small--letter-spacing: -0.5px;
 
     /* Extra Large - 24px */
     --text-xl-bold: 24px;

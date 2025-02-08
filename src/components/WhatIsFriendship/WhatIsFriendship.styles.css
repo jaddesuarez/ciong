@@ -1,21 +1,21 @@
-.section2 {
+.what-is-friendship {
   padding: 50px 20px;
 }
 
 @media (min-width: 768px) {
-  .section2 {
+  .what-is-friendship {
     padding: 100px 80px;
   }
 }
 
-.section2-content {
+.what-is-friendship-content {
   @apply w-full;
   @apply flex flex-col items-center justify-center;
   gap: 30px;
 }
 
 @media (min-width: 768px) {
-  .section2-content {
+  .what-is-friendship-content {
     gap: 60px;
   }
 }

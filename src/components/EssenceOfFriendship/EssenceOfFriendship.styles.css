@@ -1,19 +1,26 @@
-.section4 {
+.essence-of-friendship {
   @apply relative w-full;
   @apply flex flex-col items-center justify-center gap-[30px];
-  @apply text-center py-[100px] px-[80px];
+  @apply text-center;
+  padding: 2.5rem 1rem;
 }
 
-.section4::before {
+@media (min-width: 768px) {
+  .essence-of-friendship {
+    padding: 100px 80px;
+  }
+}
+
+.essence-of-friendship::before {
   @apply content-[''] absolute w-full h-full;
   @apply bg-[url(/images/section-bg.jpeg)] bg-cover bg-center bg-no-repeat opacity-80;
 }
 
-.section4::after {
+.essence-of-friendship::after {
   @apply content-[''] absolute w-full h-full;
   @apply bg-[color:rgba(var(--purple),0.3)];
 }
 
-.section4 > * {
+.essence-of-friendship > * {
   @apply relative z-10;
 }

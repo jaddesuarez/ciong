@@ -5,23 +5,23 @@ interface NavLink {
 
 export const NAVLINKS: NavLink[] = [
   {
-    href: "/",
+    href: "#essence-of-friendship",
     text: "La esencia",
   },
   {
-    href: "/",
+    href: "#what-is-friendship",
     text: "¿Qué es?",
   },
   {
-    href: "/",
+    href: "#types-of-friendship",
     text: "Tipos",
   },
   {
-    href: "/",
+    href: "#qualities",
     text: "Requisitos para ser amado",
   },
   {
-    href: "/",
+    href: "#resources",
     text: "Recursos",
   },
 ]
@@ -223,4 +223,12 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     colorText: "No se consigue a golpe de clicks.",
     rotation: "-6.16deg",
   },
+]
+
+export const DESCRIPTIONS = [
+  "¿Puede durar mucho tiempo?",
+  "¿Qué cualidades harían falta para construirla?",
+  "¿Puede superar las diferencias o conflictos?",
+  "¿Serías capaz de morir por ella?",
+  "¿Cuál es su esencial?",
 ]

@@ -1,0 +1,96 @@
+---
+import "./WhatIsFriendship.styles.css"
+import { FRIENDSHIP_IMAGES } from "@/consts/index"
+---
+
+<section id="what-is-friendship" class="what-is-friendship">
+  <div class="what-is-friendship-content">
+    <div class="flex flex-col items-center mb-20">
+      <h1 class="text-display-heavy text-black uppercase">Qué es la</h1>
+      <h1 class="text-display-heavy text-purple uppercase">Amistad</h1>
+    </div>
+    <div class="w-full">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16 mb-8 md:mb-16"
+      >
+        {
+          FRIENDSHIP_IMAGES.slice(0, 4).map((item) => (
+            <div class="max-w-[280px] mx-auto w-full">
+              <div
+                class={`border-white border-[8px] md:border-[16px] relative bg-white transform transition-all duration-300 hover:scale-105 
+              ${
+                item.text.length + item.colorText.length > 45
+                  ? "border-b-[60px] md:border-b-[80px]"
+                  : "border-b-[40px] md:border-b-[60px]"
+              }`}
+                style={`transform: rotate(${item.rotation})`}
+              >
+                <img
+                  src={item.image}
+                  alt={item.text}
+                  class="w-full aspect-square object-cover"
+                />
+                <p
+                  class={`absolute left-1/2 -translate-x-1/2 text-black text-xs md:text-sm w-[95%] text-center font-bold
+                ${
+                  item.text.length + item.colorText.length > 45
+                    ? "bottom-[-50px] md:bottom-[-70px]"
+                    : "bottom-[-35px] md:bottom-[-50px]"
+                }`}
+                >
+                  <span class="text-purple font-bold">{item.colorText}</span>{" "}
+                  {item.text}
+                </p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16"
+      >
+        {
+          FRIENDSHIP_IMAGES.slice(4, 8).map((item) => (
+            <div class="max-w-[280px] mx-auto w-full">
+              <div
+                class={`border-white border-[8px] md:border-[16px] relative bg-white transform transition-all duration-300 hover:scale-105 
+              ${
+                item.text.length + item.colorText.length > 70
+                  ? "border-b-[60px] md:border-b-[80px]"
+                  : "border-b-[40px] md:border-b-[60px]"
+              }`}
+                style={`transform: rotate(${item.rotation})`}
+              >
+                <img
+                  src={item.image}
+                  alt={item.text}
+                  class="w-full aspect-square object-cover"
+                />
+                <p
+                  class={`absolute left-1/2 -translate-x-1/2 text-black text-xs md:text-sm w-[95%] text-center font-bold
+                ${
+                  item.text.length + item.colorText.length > 70
+                    ? "bottom-[-50px] md:bottom-[-70px]"
+                    : "bottom-[-35px] md:bottom-[-50px]"
+                }`}
+                >
+                  <span class="text-purple font-bold">{item.colorText}</span>{" "}
+                  {item.text}
+                </p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <a
+      href="https://example.com/test-amistad"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block mt-10 md:mt-20 px-[60px] py-[20px] rounded-full border-2 border-purple text-purple text-l-bold hover:bg-purple hover:text-white transition-colors duration-300"
+    >
+      Test de amistad
+    </a>
+  </div>
+</section>

@@ -1,26 +1,19 @@
-.section1 {
+.qualities {
   @apply relative w-full;
   @apply flex flex-col items-center justify-center gap-[30px];
-  @apply text-center;
-  padding: 2.5rem 1rem;
+  @apply text-center py-[100px] px-[80px];
 }
 
-@media (min-width: 768px) {
-  .section1 {
-    padding: 100px 80px;
-  }
-}
-
-.section1::before {
+.qualities::before {
   @apply content-[''] absolute w-full h-full;
   @apply bg-[url(/images/section-bg.jpeg)] bg-cover bg-center bg-no-repeat opacity-80;
 }
 
-.section1::after {
+.qualities::after {
   @apply content-[''] absolute w-full h-full;
   @apply bg-[color:rgba(var(--purple),0.3)];
 }
 
-.section1 > * {
+.qualities > * {
   @apply relative z-10;
 }

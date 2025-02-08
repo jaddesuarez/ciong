@@ -42,6 +42,12 @@
   --text-l-heavy-tall--font-weight: var(--text-l-heavy-tall--font-weight);
   --text-l-heavy-tall--letter-spacing: var(--text-l-heavy-tall--letter-spacing);
 
+  /* Large - 22 */
+  --text-l-heavy-tall-small: var(--text-l-heavy-tall-small);
+  --text-l-heavy-tall-small--line-height: var(--text-l-heavy-tall-small--line-height);
+  --text-l-heavy-tall-small--font-weight: var(--text-l-heavy-tall-small--font-weight);
+  --text-l-heavy-tall-small--letter-spacing: var(--text-l-heavy-tall-small--letter-spacing);
+
   /* Extra Large - 24px */
   --text-xl-bold: var(--text-xl-bold);
   --text-xl-bold--line-height: var(--text-xl-bold--line-height);

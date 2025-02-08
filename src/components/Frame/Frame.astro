@@ -1,11 +1,9 @@
 ---
 interface IFrameProps {
-  image?: string
   dimensions: {
     width: number
     height: number
   }
-  text?: string
   bg?: string
   rotation?: number
   padding: {
@@ -18,9 +16,7 @@ interface IFrameProps {
 const props = Astro.props as IFrameProps
 
 const {
-  image,
   dimensions,
-  text,
   bg = "bg-white",
   rotation = 0,
   padding = { top: "pt-4", bottom: "pb-5", lateral: "px-4" },
@@ -31,6 +27,5 @@ const {
   style={`transform: rotate(${rotation}deg);`}
   class={`frameContainer ${dimensions.width} ${dimensions.height} ${bg} ${padding.lateral} ${padding.top} ${padding.bottom}`}
 >
-  <img class="w-full h-full object-cover" src={image} alt={text} />
-  {text}
+  <slot />
 </div>
