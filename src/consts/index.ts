@@ -151,3 +151,61 @@ export const ACCORDION_ITEMS: AccordionItem[] = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
   },
 ];
+
+export interface IFriendshipImage {
+  image: string;
+  text: string;
+  colorText: string;
+  rotation: string;
+}
+
+export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
+  {
+    image: "/images/section2/img1.png",
+    text: "Se encuentra no se compra.",
+    colorText: "Un tesoro.",
+    rotation: "-6.22deg",
+  },
+  {
+    image: "/images/section2/img2.png",
+    text: "A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.",
+    colorText: "Un premio de Lotería.",
+    rotation: "0deg",
+  },
+  {
+    image: "/images/section2/img3.png",
+    text: "Y nos enseña quiénes somos realmente.",
+    colorText: "Nos hace ser nosotros mismos.",
+    rotation: "12.78deg",
+  },
+  {
+    image: "/images/section2/img4.png",
+    text: "Darse sin buscar nada a cambio, hacer favores, dedicar tiempo.",
+    colorText: "Servicio.",
+    rotation: "0deg",
+  },
+  {
+    image: "/images/section2/img5.png",
+    text: "Que no se rebaja a ser colega.",
+    colorText: "Algo que nos hace mejores.",
+    rotation: "12.78deg",
+  },
+  {
+    image: "/images/section2/img6.png",
+    text: "No se cierra, no es posesiva, no se diluye al compartirla.",
+    colorText: "Una amistad es abierta.",
+    rotation: "-6.22deg",
+  },
+  {
+    image: "/images/section2/img7.png",
+    text: "Comienza dónde termina el interés.",
+    colorText: "Una amistad es gratis.",
+    rotation: "0deg",
+  },
+  {
+    image: "/images/section2/img8.png",
+    text: "Hace falta salir y lleva tiempo.",
+    colorText: "No se consigue a golpe de clicks.",
+    rotation: "-6.16deg",
+  },
+];
