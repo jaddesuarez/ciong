@@ -1,8 +1,8 @@
-import type { JSX } from "astro/jsx-runtime"
+import type { JSX } from "astro/jsx-runtime";
 
 interface NavLink {
-  href: string
-  text: string
+  href: string;
+  text: string;
 }
 
 export const NAVLINKS: NavLink[] = [
@@ -26,7 +26,7 @@ export const NAVLINKS: NavLink[] = [
     href: "#resources",
     text: "Recursos",
   },
-]
+];
 
 export const INDEX_GROUPS = [
   ["los de toda la vida", "los puntuales"],
@@ -41,12 +41,12 @@ export const INDEX_GROUPS = [
     "con los que hago deporte",
     "los de mi familia",
   ],
-]
+];
 
 export interface IBook {
-  title: string
-  author: string
-  image: string
+  title: string;
+  author: string;
+  image: string;
 }
 
 export const BOOKS: IBook[] = [
@@ -85,12 +85,12 @@ export const BOOKS: IBook[] = [
     author: "de Dale Carnegie",
     image: "/images/books/book7.png",
   },
-]
+];
 
 export interface IMovie {
-  title: string
-  year: string
-  image: string
+  title: string;
+  year: string;
+  image: string;
 }
 
 export const MOVIES: IMovie[] = [
@@ -124,11 +124,11 @@ export const MOVIES: IMovie[] = [
     year: "1989",
     image: "/images/movies/movie6.png",
   },
-]
+];
 
 export interface AccordionItem {
-  title: string
-  content: string
+  title: string;
+  content: string;
 }
 
 export const ACCORDION_ITEMS: AccordionItem[] = [
@@ -140,42 +140,42 @@ export const ACCORDION_ITEMS: AccordionItem[] = [
   {
     title: "Lealtad",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "“La verdadera amistad, como la fosforescencia, resplandece mejor cuando todo se ha oscurecido” (Rabindranath Tagore) “En la prosperidad, nuestros amigos nos conocen; en la adversidad, nosotros conocemos a nuestros amigos” (John Churton Collins)",
   },
   {
     title: "Compromiso",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "“Todo el mundo quiere tener un amigo, pero nadie se toma la molestia de convertirse en uno” (Ralph Waldo Emerson)",
   },
   {
     title: "Flexibilidad",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "“La amistad se fortalece cuando dejamos de centrarnos en nuestras preferencias y aprendemos a abrazar los gustos del otro” (William Hazlitt)",
   },
   {
     title: "Conexión",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "“La verdadera amistad llega cuando el silencio entre dos parece ameno.” (David Tyson Gentry)",
   },
   {
     title: "Sencillez",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "“Un amigo es alguien con quien se puede no hacer nada y disfrutar de ello.” (Popular)",
   },
   {
     title: "Moldeable",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "“La vida es en parte lo que nosotros hacemos de ella y en parte lo que hacen de ella los amigos que escogemos” (Tennessee Williams)",
   },
-]
+];
 
 interface IFriendshipImage {
-  image: string
-  text: string
-  rotation?: number
-  element?: JSX.Element
-  width?: string
-  height?: string
+  image: string;
+  text: string;
+  rotation?: number;
+  element?: JSX.Element;
+  width?: string;
+  height?: string;
 }
 
 export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
@@ -268,7 +268,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     width: "w-[260px]",
     height: "h-[343px]",
   },
-]
+];
 
 export const DESCRIPTIONS = [
   "¿Puede durar mucho tiempo?",
@@ -276,4 +276,200 @@ export const DESCRIPTIONS = [
   "¿Puede superar las diferencias o conflictos?",
   "¿Serías capaz de morir por ella?",
   "¿Cuál es su esencial?",
-]
+];
+
+export interface TestQuestion {
+  id: number;
+  question: string;
+  options: {
+    value: "A" | "B" | "C" | "D";
+    text: string;
+  }[];
+}
+
+export interface TestResult {
+  type: "A" | "B" | "C" | "D";
+  title: string;
+  description: string;
+}
+
+export const FRIENDSHIP_TEST: TestQuestion[] = [
+  {
+    id: 1,
+    question:
+      "Me doy cuenta rápido cuando un amigo está triste o preocupado en vez de que me lo tenga que decir....",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 2,
+    question:
+      "Mis conversaciones son superficiales (fútbol, planes de fin de semana, etc.) o soy capaz de hablar de las cosas que más me afectan.",
+    options: [
+      {
+        value: "A",
+        text: "Con frecuencia hablamos de aquello que más nos importa",
+      },
+      { value: "B", text: "A veces hablamos de otras cosas" },
+      { value: "C", text: "Casi siempre son superficiales" },
+      { value: "D", text: "Rara vez hablamos de temas profundos" },
+    ],
+  },
+  {
+    id: 3,
+    question:
+      "Si un amigo me cuenta un problema, intento escuchar sin dar consejos inmediatamente.",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 4,
+    question:
+      "Cuando tengo un problema con un amigo, trato de hablarlo en lugar de ignorarlo.",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 5,
+    question:
+      "Comparto mis pensamientos y sentimientos con mis amigos cercanos de forma honesta.",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 6,
+    question: "Mis amigos saben que pueden contar conmigo cuando lo necesiten.",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 7,
+    question:
+      "Me siento cómodo confiando en mis amigos con cosas importantes de mi vida.",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 8,
+    question:
+      "Con mis amigos, me siento libre de ser yo mismo(a), sin miedo a ser juzgado(a).",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 9,
+    question:
+      "Me siento bien compartiendo cosas sobre mi vida, incluso las partes que no son perfectas.",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 10,
+    question:
+      "Si un amigo tiene opiniones diferentes a las mías, trato de entender su punto de vista sin pelear.",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 11,
+    question:
+      "Aprecio las diferencias entre mis amigos (como gustos, estilos de vida o personalidades).",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 12,
+    question:
+      "Si un amigo me decepciona, trato de hablar con él/ella en lugar de cortar la relación.",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 13,
+    question:
+      "Aunque tengamos discusiones, trato de arreglar las cosas porque valoro la amistad.",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 14,
+    question:
+      "Comparto mis preocupaciones con mi amigo/a a la cara en vez de mediante mensajes de texto siempre que puedo.",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 15,
+    question:
+      "Tengo iniciativa para hacer favores a mis amigos y tengo en mente tener tiempo para lo que ellos puedan necesitar cada día o cada semana.",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+  {
+    id: 16,
+    question:
+      "Tengo la confianza suficiente como para llevar a mis amigos a mi lugar de intimidad (mi casa, mi familia...).",
+    options: [
+      { value: "A", text: "Siempre" },
+      { value: "B", text: "Casi siempre" },
+      { value: "C", text: "A veces" },
+      { value: "D", text: "Rara vez" },
+    ],
+  },
+];
