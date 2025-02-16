@@ -187,8 +187,8 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
       </p>`,
     text: "Un tesoro. Se encuentra no se compra.",
     rotation: -6.22,
-    width: "w-[306px]",
-    height: "h-[294px]",
+    width: "w-[250px] md:w-[306px]",
+    height: "h-[250px] md:h-[294px]",
   },
   {
     image: "/images/section2/img2.png",
@@ -197,8 +197,8 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
         <span class="text-black">A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.</span>
       </p>`,
     text: "Un premio de Lotería. A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.",
-    width: "w-[306px]",
-    height: "h-[330px]",
+    width: "w-[250px] md:w-[306px]",
+    height: "h-[300px] md:h-[330px]",
   },
   {
     image: "/images/section2/img3.png",
@@ -208,8 +208,8 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
       </p>`,
     text: "Nos hace ser nosotros mismos. Y nos enseña quiénes somos realmente.",
     rotation: 12.78,
-    width: "w-[280px]",
-    height: "h-[294px]",
+    width: "w-[250px] md:w-[280px]",
+    height: "h-[290px] md:h-[294px]",
   },
   {
     image: "/images/section2/img4.png",
@@ -220,8 +220,8 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
         </span>
       </p>`,
     text: "Servicio. Darse sin buscar nada a cambio, hacer favores, dedicar tiempo.",
-    width: "w-[266px]",
-    height: "h-[253px]",
+    width: "w-[250px] md:w-[266px]",
+    height: "h-[250px] md:h-[253px]",
   },
   {
     image: "/images/section2/img5.png",
@@ -231,8 +231,8 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
       </p>`,
     text: "Algo que nos hace mejores. Que no se rebaja a ser colega.",
     rotation: 12.78,
-    width: "w-[280px]",
-    height: "h-[294px]",
+    width: "w-[250px] md:w-[280px]",
+    height: "h-[270px] md:h-[294px]",
   },
   {
     image: "/images/section2/img6.png",
@@ -244,8 +244,8 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
       </p>`,
     text: "Una amistad es abierta. No se cierra, no es posesiva, no se diluye al compartirla.",
     rotation: -6.22,
-    width: "w-[306px]",
-    height: "h-[302px]",
+    width: "w-[250px] md:w-[306px]",
+    height: "h-[250px] md:h-[302px]",
   },
   {
     image: "/images/section2/img7.png",
@@ -254,8 +254,8 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
         <span class="text-black">Comienza dónde termina el interés.</span>
       </p>`,
     text: "Una amistad es gratis. Comienza dónde termina el interés.",
-    width: "w-[266px]",
-    height: "h-[266px]",
+    width: "w-[250px] md:w-[266px]",
+    height: "h-[250px] md:h-[266px]",
   },
   {
     image: "/images/section2/img8.png",
@@ -265,8 +265,8 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
       </p>`,
     text: "No se consigue a golpe de clicks. Hace falta salir y lleva tiempo.",
     rotation: -6.16,
-    width: "w-[260px]",
-    height: "h-[343px]",
+    width: "w-[250px] md:w-[260px]",
+    height: "h-[330px] md:h-[343px]",
   },
 ];
 
