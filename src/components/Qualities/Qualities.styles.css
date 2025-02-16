@@ -1,7 +1,7 @@
 .qualities {
   @apply relative w-full;
   @apply flex flex-col items-center justify-center gap-[30px];
-  @apply text-center py-[100px] px-[80px];
+  @apply text-center;
 }
 
 .qualities::before {

@@ -6,14 +6,14 @@ import { INDEX_GROUPS } from "@/consts/index"
 let overallIndex = 0
 ---
 
-<section id="types-of-friendship" class="types-of-friend-ship-banner bg-beige">
-  <h2 class="text-display-heavy text-center uppercase flex flex-col">
+<section id="types-of-friendship" class="types-of-friend-ship-banner py-6 px-8 md:py-10 md:px-10 lg:py-[100px] lg:px-[80px] bg-beige">
+  <h2 class="text-xxxl-heavy md:text-display-heavy text-center uppercase flex flex-col">
     <span class="text-black">Tipos de</span>
     <span class="text-purple">amistad</span>
   </h2>
 
   <div class="flex justify-between items-center w-full">
-    <div class="flex flex-col list-none">
+    <div class="w-full md:w-1/2 flex-col list-none">
       {
         INDEX_GROUPS.map((group) => {
           return (
@@ -21,7 +21,7 @@ let overallIndex = 0
               {group.map((item) => {
                 overallIndex++
                 return (
-                  <li class="text-large-heavy text-black hover:text-purple flex items-center gap-[10px] uppercase">
+                  <li class="text-m-bold-small md:text-xl-heavy lg:text-large-heavy text-black hover:text-purple flex items-center gap-[10px] uppercase">
                     <span class="text-l-heavy-tall">0</span>
                     <span>[{item}]</span>
                     <span class="text-l-heavy-tall">{overallIndex}</span>
@@ -33,19 +33,20 @@ let overallIndex = 0
         })
       }
     </div>
-
-    <Frame
-      padding={{ top: "pt-[10px]", bottom: "pb-[30px]", lateral: "px-[10px]" }}
-      dimensions={{ width: "w-[305px]", height: "h-[426px]" }}
-      image="/images/kids.avif"
-      bg="bg-yellow"
-      rotation={8.936}
-    >
-      <img
-        class="w-full h-full object-cover"
-        src={"/images/kids.avif"}
-        alt={"kids"}
-      />
-    </Frame>
+    <div class="hidden md:block">
+      <Frame
+        padding={{ top: "pt-[10px]", bottom: "pb-[30px]", lateral: "px-[10px]" }}
+        dimensions={{ width: "w-[305px]", height: "h-[426px]" }}
+        image="/images/kids.avif"
+        bg="bg-yellow"
+        rotation={8.936}
+      >
+        <img
+          class="w-full h-full object-cover"
+          src={"/images/kids.avif"}
+          alt={"kids"}
+        />
+      </Frame>
+    </div>
   </div>
 </section>
