@@ -36,7 +36,7 @@ import { FRIENDSHIP_TEST } from "@/consts/index"
       <form id="friendshipTest" class="max-w-3xl mx-auto">
         {FRIENDSHIP_TEST.map((question) => (
           <div class="mb-8 p-6 bg-white rounded-lg shadow-md">
-            <p class="text-l-bold mb-4">
+            <p class="text-m-bold-small md:text-l-bold mb-4">
               {question.id}. {question.question}
             </p>
             <div class="space-y-3">
@@ -49,7 +49,7 @@ import { FRIENDSHIP_TEST } from "@/consts/index"
                     required
                     class="form-radio h-5 w-5 text-purple cursor-pointer"
                   />
-                  <span class="text-m-regular cursor-pointer">{option.text}</span>
+                  <span class="text-s-medium md:text-m-regular cursor-pointer">{option.text}</span>
                 </label>
               ))}
             </div>
@@ -66,8 +66,8 @@ import { FRIENDSHIP_TEST } from "@/consts/index"
     </div>
 
     <div id="testResults" class="hidden max-w-3xl mx-auto mt-10 p-8 bg-white rounded-lg shadow-md">
-      <h2 class="text-xxxl-heavy text-purple mb-4" id="resultTitle"></h2>
-      <p class="text-l-regular" id="resultDescription"></p>
+      <h2 class="text-l-bold md:text-xxxl-heavy text-purple mb-4" id="resultTitle"></h2>
+      <p class="text-m-regular md:text-l-regular" id="resultDescription"></p>
     </div>
   </main>
 </Layout>
