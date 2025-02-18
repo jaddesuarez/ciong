@@ -179,6 +179,7 @@ interface IFriendshipImage {
   imgWidth?: string;
   imgHeight?: string;
   bg?: string;
+  className?: string;
 }
 
 export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
@@ -195,6 +196,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     imgWidth: "w-[149.2px] md:w-[274.97px]",
     imgHeight: "h-[116.21px] md:h-[206.94px]",
     bg: "bg-yellow lg:bg-white lg:hover:bg-yellow",
+    className: "col-span-1",
   },
   {
     image: "/images/section2/img02.png",
@@ -208,6 +210,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     imgWidth: "w-[151.93px] md:w-[274.97px]",
     imgHeight: "h-[129.65px] md:h-[234.66px]",
     bg: "bg-white lg:hover:bg-yellow",
+    className: "col-span-1",
   },
   {
     image: "/images/section2/img03.png",
@@ -222,6 +225,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     imgWidth: "w-[247.21px]",
     imgHeight: "h-[185.54px]",
     bg: "bg-white lg:hover:bg-yellow",
+    className: "col-span-2 md:col-span-2 lg:col-span-1",
   },
   {
     image: "/images/section2/img04.png",
@@ -237,6 +241,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     imgWidth: "w-[135.78px] md:w-[234.03px]",
     imgHeight: "h-[91.6px] md:h-[157.87px]",
     bg: "bg-white lg:hover:bg-yellow",
+    className: "col-span-1",
   },
   {
     image: "/images/section2/img05.png",
@@ -251,6 +256,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     imgWidth: "w-[143.43px] md:w-[247.21px]",
     imgHeight: "h-[107.65px] md:h-[185.54px]",
     bg: "bg-purple lg:bg-white lg:hover:bg-yellow",
+    className: "col-span-1",
   },
   {
     image: "/images/section2/img06.png",
@@ -267,6 +273,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     imgWidth: "w-[274.97px]",
     imgHeight: "h-[206.94px]",
     bg: "bg-white lg:hover:bg-yellow",
+    className: "col-span-2 md:col-span-2 lg:col-span-1",
   },
   {
     image: "/images/section2/img07.png",
@@ -280,6 +287,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     imgWidth: "w-[145.85px] md:w-[234.03px]",
     imgHeight: "h-[102.35px] md:h-[157.87px]",
     bg: "bg-yellow lg:bg-white lg:hover:bg-yellow",
+    className: "col-span-1",
   },
   {
     image: "/images/section2/img08.png",
@@ -294,6 +302,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     imgWidth: "w-[143.15px] md:w-[229px]",
     imgHeight: "h-[152.29px] md:h-[235px]",
     bg: "bg-white lg:hover:bg-yellow",
+    className: "col-span-1",
   },
 ];
 
