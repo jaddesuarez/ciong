@@ -20,16 +20,16 @@ import { FRIENDSHIP_IMAGES } from "@/consts/index"
     >
       {
         FRIENDSHIP_IMAGES.map(
-          ({ rotation, width, height, image, text, element }) => (
+          ({ rotation, frameWidth, frameHeight, imgWidth, imgHeight, image, text, element }) => (
             <Frame
               className="hover:scale-105 transition-transform duration-300"
               dimensions={{
-                width,
-                height,
+                frameWidth,
+                frameHeight,
               }}
               rotation={rotation}
             >
-              <img src={image} alt={text} class="object-cover" />
+              <img src={image} alt={text} class={`${imgWidth} ${imgHeight} object-cover`} />
               <div class="mt-3 mx-auto" set:html={element} />
             </Frame>
           )
