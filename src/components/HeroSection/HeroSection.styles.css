@@ -1,4 +1,3 @@
 .hero-content {
-  @apply flex flex-col items-center justify-center;
   @apply text-[color:rgba(var(--black))];
 }

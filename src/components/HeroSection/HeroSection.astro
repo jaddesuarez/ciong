@@ -1,17 +1,18 @@
 ---
+import Frame from "../Frame/Frame.astro"
 import "./HeroSection.styles.css"
-import { DESCRIPTIONS } from "@/consts/index"
+import { DESCRIPTIONS, HERO_IMAGES } from "@/consts/index"
 ---
 
-<section id="hero" class="py-6 px-2 md:pb-[100px] md:px-[80px] md:pt-[50px]">
-  <div class="hero-content bg-none lg:bg-[url(/images/hero/hero-bg.png)] bg-cover bg-center bg-no-repeat">
+<section id="hero" class="flex flex-col gap-10 py-6 px-2 md:px-4 lg:pb-[100px] lg:px-[80px] lg:pt-[50px]">
+  <div class="hero-content flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-40 items-center justify-center">
     <img
       src="/images/hero/hero-text.svg"
       alt="imagen de la página"
-      class="mb-[30px]"
+      class="w-full md:w-2/5 lg:w-1/2"
     />
     <div>
-      <h1 class="text-l-heavy-tall-small uppercase mb-3">
+      <h1 class="text-l-heavy-tall-small uppercase">
         ¿Qué es la amistad?
       </h1>
       {
@@ -20,5 +21,8 @@ import { DESCRIPTIONS } from "@/consts/index"
         ))
       }
     </div>
+  </div>
+  <div class="hidden lg:block items-center justify-center">
+   
   </div>
 </section>

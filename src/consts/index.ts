@@ -491,3 +491,30 @@ export const FRIENDSHIP_TEST: TestQuestion[] = [
     ],
   },
 ];
+
+export const HERO_IMAGES = [
+  {
+    image: "/images/hero/img01.png",
+    alt: "imagen de la página",
+    frameWidth: "w-[166.88px] md:w-[306.97px]",
+    frameHeight: "h-[165.19px] md:h-[294.94px]",
+  },
+  {
+    image: "/images/hero/img02.png",
+    alt: "imagen de la página",
+    frameWidth: "w-[169.61px] md:w-[306.97px]",
+    frameHeight: "h-[204.17px] md:h-[330.66px]",
+  },
+  {
+    image: "/images/hero/img03.png",
+    alt: "imagen de la página",
+    frameWidth: "w-[279.21px] md:w-[279.21px]",
+    frameHeight: "h-[261.54px] md:h-[293.54px]",
+  },
+  {
+    image: "/images/hero/img04.png",
+    alt: "imagen de la página",
+    frameWidth: "w-[154.35px] md:w-[266.03px]",
+    frameHeight: "h-[155.45px] md:h-[253.87px]",
+  },
+];
