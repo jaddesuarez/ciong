@@ -43,10 +43,12 @@ const defaultImage = images[0]
                   <li
                     data-selected={false}
                     data-index={overallIndex - 1}
-                    class="text-l-heavy-tall-small-mobile md:data-[selected=true]:text-purple md:text-xl-heavy md:w-fit lg:text-large-heavy text-black hover:text-purple flex items-center gap-[10px] uppercase"
+                    class="md:data-[selected=true]:text-purple md:w-fit text-black hover:text-purple flex items-center gap-[10px] uppercase"
                   >
                     <span class="text-s-heavy md:text-l-heavy-tall">0</span>
-                    <span>[{item}]</span>
+                    <span class="text-l-heavy-tall-small-mobile md:text-xl-heavy lg:text-large-heavy ">
+                      [{item}]
+                    </span>
                     <span class="text-s-heavy md:text-l-heavy-tall">
                       {overallIndex}
                     </span>
