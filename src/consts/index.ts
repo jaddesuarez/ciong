@@ -178,6 +178,7 @@ interface IFriendshipImage {
   frameHeight?: string;
   imgWidth?: string;
   imgHeight?: string;
+  bg?: string;
 }
 
 export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
@@ -193,6 +194,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     frameHeight: "h-[165.19px] md:h-[294.94px]",
     imgWidth: "w-[149.2px] md:w-[274.97px]",
     imgHeight: "h-[116.21px] md:h-[206.94px]",
+    bg: "bg-yellow lg:bg-white lg:hover:bg-yellow",
   },
   {
     image: "/images/section2/img02.png",
@@ -205,6 +207,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     frameHeight: "h-[204.17px] md:h-[330.66px]",
     imgWidth: "w-[151.93px] md:w-[274.97px]",
     imgHeight: "h-[129.65px] md:h-[234.66px]",
+    bg: "bg-white lg:hover:bg-yellow",
   },
   {
     image: "/images/section2/img03.png",
@@ -218,6 +221,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     frameHeight: "h-[261.54px] md:h-[293.54px]",
     imgWidth: "w-[247.21px] md:w-[247.21px]",
     imgHeight: "h-[185.54px] md:h-[285.54px]",
+    bg: "bg-white lg:hover:bg-yellow",
   },
   {
     image: "/images/section2/img04.png",
@@ -232,12 +236,13 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     frameHeight: "h-[155.45px] md:h-[253.87px]",
     imgWidth: "w-[135.78px] md:w-[234.03px]",
     imgHeight: "h-[91.6px] md:h-[157.87px]",
+    bg: "bg-white lg:hover:bg-yellow",
   },
   {
     image: "/images/section2/img05.png",
     element: `<p class="text-l-bold-small text-center">
-        <span class="text-purple">Algo que nos hace mejores.</span>
-        <span class="text-black"> Que no se rebaja a ser colega.</span>
+        <span class="text-white lg:text-purple">Algo que nos hace mejores.</span>
+        <span class="text-white lg:text-black"> Que no se rebaja a ser colega.</span>
       </p>`,
     text: "Algo que nos hace mejores. Que no se rebaja a ser colega.",
     rotation: 12.78,
@@ -245,6 +250,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     frameHeight: "h-[171.5px] md:h-[293.54px]",
     imgWidth: "w-[143.43px] md:w-[247.21px]",
     imgHeight: "h-[107.65px] md:h-[185.54px]",
+    bg: "bg-purple lg:bg-white lg:hover:bg-yellow",
   },
   {
     image: "/images/section2/img06.png",
@@ -260,6 +266,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     frameHeight: "h-[302.94px] md:h-[302.94px]",
     imgWidth: "w-[274.97px] md:w-[274.97px]",
     imgHeight: "h-[206.94px] md:h-[206.94px]",
+    bg: "bg-white lg:hover:bg-yellow",
   },
   {
     image: "/images/section2/img07.png",
@@ -272,6 +279,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     frameHeight: "h-[171.8px] md:h-[265.87px]",
     imgWidth: "w-[145.85px] md:w-[234.03px]",
     imgHeight: "h-[102.35px] md:h-[157.87px]",
+    bg: "bg-yellow lg:bg-white lg:hover:bg-yellow",
   },
   {
     image: "/images/section2/img08.png",
@@ -285,6 +293,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     frameHeight: "h-[218.85px] md:h-[343px]",
     imgWidth: "w-[143.15px] md:w-[229px]",
     imgHeight: "h-[152.29px] md:h-[235px]",
+    bg: "bg-white lg:hover:bg-yellow",
   },
 ];
 
