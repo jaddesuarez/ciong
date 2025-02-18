@@ -184,7 +184,7 @@ interface IFriendshipImage {
 export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
   {
     image: "/images/section2/img01.png",
-    element: `<p class="text-l-bold-small text-center">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[149.2px] md:w-[274.97px]">
         <span class="text-purple">Un tesoro.</span>
         <span class="text-black"> Se encuentra no se compra.</span>
       </p>`,
@@ -198,7 +198,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
   },
   {
     image: "/images/section2/img02.png",
-    element: `<p class="text-m-bold-small text-center">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[151.93px] md:w-[274.97px]">
         <span class="text-purple">Un premio de Lotería.</span>
         <span class="text-black">A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.</span>
       </p>`,
@@ -211,7 +211,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
   },
   {
     image: "/images/section2/img03.png",
-    element: `<p class="text-l-bold-small text-center">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[247.21px]">
         <span class="text-purple">Nos hace ser nosotros mismos.</span>
         <span class="text-black"> Y nos enseña quiénes somos realmente.</span>
       </p>`,
@@ -225,7 +225,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
   },
   {
     image: "/images/section2/img04.png",
-    element: `<p class="text-m-bold-small text-center">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[135.78px] md:w-[234.03px]">
         <span class="text-purple">Servicio.</span>
         <span class="text-black">
           Darse sin buscar nada a cambio, hacer favores, dedicar tiempo.
@@ -240,7 +240,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
   },
   {
     image: "/images/section2/img05.png",
-    element: `<p class="text-l-bold-small text-center">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[143.43px] md:w-[247.21px]">
         <span class="text-white lg:text-purple">Algo que nos hace mejores.</span>
         <span class="text-white lg:text-black"> Que no se rebaja a ser colega.</span>
       </p>`,
@@ -254,7 +254,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
   },
   {
     image: "/images/section2/img06.png",
-    element: `<p class="text-m-bold-small text-center">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[247.97px]">
         <span class="text-purple">Una amistad es abierta.</span>
         <span class="text-black">
           No se cierra, no es posesiva, no se diluye al compartirla.
@@ -270,7 +270,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
   },
   {
     image: "/images/section2/img07.png",
-    element: `<p class="text-l-bold-small text-center">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[145.85px] md:w-[234.03px]">
         <span class="text-purple">Una amistad es gratis.</span>
         <span class="text-black">Comienza dónde termina el interés.</span>
       </p>`,
@@ -283,7 +283,7 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
   },
   {
     image: "/images/section2/img08.png",
-    element: `<p class="text-l-bold-small text-center">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[143.15px] md:w-[229px]">
         <span class="text-purple">No se consigue a golpe de clicks.</span>
         <span class="text-black">Hace falta salir y lleva tiempo.</span>
       </p>`,
