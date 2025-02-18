@@ -4,10 +4,29 @@ import Frame from "../Frame/Frame.astro"
 import { INDEX_GROUPS } from "@/consts/index"
 
 let overallIndex = 0
+
+const images = [
+  "/images/TypesOfFriendShip/img01.png",
+  "/images/TypesOfFriendShip/img02.png",
+  "/images/TypesOfFriendShip/img03.png",
+  "/images/TypesOfFriendShip/img04.png",
+  "/images/TypesOfFriendShip/img05.png",
+  "/images/TypesOfFriendShip/img06.png",
+  "/images/TypesOfFriendShip/img07.png",
+  "/images/TypesOfFriendShip/img08.png",
+  "/images/TypesOfFriendShip/img09.png",
+]
+
+const defaultImage = images[0]
 ---
 
-<section id="types-of-friendship" class="types-of-friend-ship-banner py-6 px-8 md:py-10 md:px-10 lg:py-[100px] lg:px-[80px] bg-beige">
-  <h2 class="text-xxxl-heavy md:text-display-heavy text-center uppercase flex flex-col">
+<section
+  id="types-of-friendship"
+  class="types-of-friend-ship-banner py-6 px-8 md:py-10 md:px-10 lg:py-[100px] lg:px-[80px] bg-beige"
+>
+  <h2
+    class="text-xxxl-heavy md:text-display-heavy text-center uppercase flex flex-col"
+  >
     <span class="text-black">Tipos de</span>
     <span class="text-purple">amistad</span>
   </h2>
@@ -21,7 +40,11 @@ let overallIndex = 0
               {group.map((item) => {
                 overallIndex++
                 return (
-                  <li class="text-m-bold-small md:text-xl-heavy lg:text-large-heavy text-black hover:text-purple flex items-center gap-[10px] uppercase">
+                  <li
+                    data-selected={false}
+                    data-index={overallIndex - 1}
+                    class="text-m-bold-small md:data-[selected=true]:text-purple md:text-xl-heavy md:w-fit lg:text-large-heavy text-black hover:text-purple flex items-center gap-[10px] uppercase"
+                  >
                     <span class="text-l-heavy-tall">0</span>
                     <span>[{item}]</span>
                     <span class="text-l-heavy-tall">{overallIndex}</span>
@@ -35,18 +58,44 @@ let overallIndex = 0
     </div>
     <div class="hidden md:block">
       <Frame
-        padding={{ top: "pt-[10px]", bottom: "pb-[30px]", lateral: "px-[10px]" }}
+        padding={{
+          top: "pt-[10px]",
+          bottom: "pb-[30px]",
+          lateral: "px-[10px]",
+        }}
         dimensions={{ width: "w-[305px]", height: "h-[426px]" }}
-        image="/images/kids.avif"
         bg="bg-yellow"
         rotation={8.936}
       >
         <img
+          id="friendship-image"
           class="w-full h-full object-cover"
-          src={"/images/kids.avif"}
-          alt={"kids"}
+          src={defaultImage}
+          alt="Friendship illustration"
         />
       </Frame>
     </div>
   </div>
 </section>
+
+<script define:vars={{ images, defaultImage }}>
+  document.addEventListener("DOMContentLoaded", () => {
+    const imageElement = document.getElementById("friendship-image")
+    const listItems = document.querySelectorAll("li[data-index]")
+    listItems[0].setAttribute("data-selected", "true")
+
+    listItems.forEach((item) => {
+      item.addEventListener("mouseenter", (e) => {
+        const listItem = e.currentTarget
+        const dataIndex = listItem.getAttribute("data-index")
+        if (dataIndex && Number(dataIndex) < images.length) {
+          imageElement.src = images[Number(dataIndex)]
+          listItems.forEach((item) => {
+            item.setAttribute("data-selected", "false")
+          })
+          listItem.setAttribute("data-selected", "true")
+        }
+      })
+    })
+  })
+</script>
