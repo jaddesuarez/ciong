@@ -22,7 +22,20 @@ import { DESCRIPTIONS, HERO_IMAGES } from "@/consts/index"
       }
     </div>
   </div>
-  <div class="hidden lg:block items-center justify-center">
-   
+  <div class="hidden lg:flex gap-20">
+    {
+      HERO_IMAGES.map((image) => (
+        <Frame
+          dimensions={{
+            with: image.frameWidth,
+            heigth: image.frameHeight,
+          }}
+          rotation={image.rotation}
+          bg={image.bg}
+        >
+          <img src={image.image} alt={image.alt} class={`${image.frameWidth} ${image.frameHeight} object-cover`} />
+        </Frame>
+      ))
+    }
   </div>
 </section>
