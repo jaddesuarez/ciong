@@ -16,19 +16,19 @@ import { FRIENDSHIP_IMAGES } from "@/consts/index"
     </div>
 
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-8 md:gap-16"
+      class="flex flex-wrap gap-3 md:gap-8 lg:gap-10"
     >
       {
         FRIENDSHIP_IMAGES.map(
-          ({ rotation, frameWidth, frameHeight, imgWidth, imgHeight, image, text, element }) => (
+          ({ rotation, frameWidth, frameHeight, imgWidth, imgHeight, image, text, element, bg }) => (
             <Frame
-              className="hover:scale-105 transition-transform duration-300"
+              className="lg:hover:scale-105 transition-transform duration-300"
               dimensions={{
-                frameWidth,
-                frameHeight,
+                width: frameWidth,
+                height: frameHeight,
               }}
-              bg="bg-white hover:bg-yellow"
               rotation={rotation}
+              bg={bg}
             >
               <img src={image} alt={text} class={`${imgWidth} ${imgHeight} object-cover`} />
               <div class="mt-3 mx-auto" set:html={element} />
