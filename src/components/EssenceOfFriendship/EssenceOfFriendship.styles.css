@@ -2,18 +2,11 @@
   @apply relative w-full;
   @apply flex flex-col items-center justify-center gap-[30px];
   @apply text-center;
-  padding: 2.5rem 1rem;
-}
-
-@media (min-width: 768px) {
-  .essence-of-friendship {
-    padding: 100px 80px;
-  }
 }
 
 .essence-of-friendship::before {
   @apply content-[''] absolute w-full h-full;
-  @apply bg-[url(/images/section-bg.jpeg)] bg-cover bg-center bg-no-repeat opacity-80;
+  @apply bg-[url(/images/section-bg.jpg)] bg-cover bg-center bg-no-repeat opacity-80;
 }
 
 .essence-of-friendship::after {

@@ -6,7 +6,7 @@
 
 .qualities::before {
   @apply content-[''] absolute w-full h-full;
-  @apply bg-[url(/images/section-bg.jpeg)] bg-cover bg-center bg-no-repeat opacity-80;
+  @apply bg-[url(/images/section-bg.jpg)] bg-cover bg-center bg-no-repeat opacity-80;
 }
 
 .qualities::after {

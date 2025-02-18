@@ -3,17 +3,17 @@ import Frame from "../Frame/Frame.astro"
 import "./EssenceOfFriendship.styles.css"
 ---
 
-<section id="essence-of-friendship" class="essence-of-friendship">
+<section id="essence-of-friendship" class="essence-of-friendship py-6 px-6 md:py-10 md:px-10 lg:py-[100px] lg:px-[80px]">
   <div class="flex flex-col items-center justify-center w-full">
     <div class="flex flex-col gap-[10px] items-center mb-10 md:mb-15">
       <h1
-        class="flex flex-col text-xl-bold md:text-xxl-heavy lg:text-display-heavy uppercase text-center"
+        class="flex flex-col text-xxxl-heavy lg:text-display-heavy uppercase text-center"
       >
         <span class="text-beige">La esencia de</span>
         <span class="text-yellow">La amistad</span>
       </h1>
       <p
-        class="hidden md:block text-l-heavy text-beige uppercase max-w-[600px] text-center px-4 md:px-0"
+        class="text-l-heavy text-beige uppercase max-w-[600px] text-center px-4 md:px-0"
       >
         "No somos amigos sólo porque compartimos grandes cosas, sino que, como
         somos amigos, cada cosa que compartimos se vuelve grande."
@@ -22,7 +22,7 @@ import "./EssenceOfFriendship.styles.css"
     <Frame
       dimensions={{ width: "w-full max-w-[1000px]", height: "h-full" }}
       bg="bg-yellow"
-      padding={{ top: "pt-5", bottom: "pb-5", lateral: "px-5" }}
+      padding={{ top: "pt-3", bottom: "pb-2", lateral: "px-3" }}
     >
       <iframe
         class="w-full aspect-video"
@@ -30,7 +30,7 @@ import "./EssenceOfFriendship.styles.css"
         title="Video de amistad"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
-      <p class="mx-auto mt-6 text-purple text-l-bold uppercase">Ver vídeo</p>
+      <p class="mx-auto mt-3 text-purple text-l-bold uppercase">Ver vídeo</p>
     </Frame>
   </div>
 </section>
