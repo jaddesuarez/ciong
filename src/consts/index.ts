@@ -185,51 +185,54 @@ interface IFriendshipImage {
 export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
   {
     image: "/images/section2/img01.png",
-    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[149.2px] md:w-[274.97px]">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center">
         <span class="text-purple">Un tesoro.</span>
         <span class="text-black"> Se encuentra no se compra.</span>
       </p>`,
     text: "Un tesoro. Se encuentra no se compra.",
     rotation: -6.22,
-    frameWidth: "w-[166.88px] md:w-[306.97px]",
-    frameHeight: "h-[165.19px] md:h-[294.94px]",
+    frameWidth: "w-[160.88px] md:w-[306.97px]",
+    frameHeight: "h-[200.19px] md:h-[270.94px] lg:h-[294.94px]",
     imgWidth: "w-[149.2px] md:w-[274.97px]",
     imgHeight: "h-[116.21px] md:h-[206.94px]",
     bg: "bg-yellow lg:bg-white lg:hover:bg-yellow",
-    className: "col-span-1",
+    className:
+      "col-span-1 lg:hover:scale-105 transition-transform duration-300",
   },
   {
     image: "/images/section2/img02.png",
-    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[151.93px] md:w-[274.97px]">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center">
         <span class="text-purple">Un premio de Lotería.</span>
         <span class="text-black">A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.</span>
       </p>`,
     text: "Un premio de Lotería. A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.",
-    frameWidth: "w-[169.61px] md:w-[306.97px]",
-    frameHeight: "h-[204.17px] md:h-[330.66px]",
+    frameWidth: "w-[180.61px] md:w-[306.97px]",
+    frameHeight: "h-[270.17px] md:h-[330.66px] lg:h-[370.66px]",
     imgWidth: "w-[151.93px] md:w-[274.97px]",
     imgHeight: "h-[129.65px] md:h-[234.66px]",
     bg: "bg-white lg:hover:bg-yellow",
-    className: "col-span-1",
+    className:
+      "col-span-1 lg:hover:scale-105 transition-transform duration-300",
   },
   {
     image: "/images/section2/img03.png",
-    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[247.21px]">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center">
         <span class="text-purple">Nos hace ser nosotros mismos.</span>
         <span class="text-black"> Y nos enseña quiénes somos realmente.</span>
       </p>`,
     text: "Nos hace ser nosotros mismos. Y nos enseña quiénes somos realmente.",
     rotation: 12.78,
     frameWidth: "w-[279.21px]",
-    frameHeight: "hh-[293.54px]",
+    frameHeight: "h-[280.54px] lg:h-[300px]",
     imgWidth: "w-[247.21px]",
     imgHeight: "h-[185.54px]",
     bg: "bg-white lg:hover:bg-yellow",
-    className: "col-span-2 md:col-span-2 lg:col-span-1",
+    className:
+      "col-span-2 md:col-span-2 lg:col-span-1 lg:hover:scale-105 transition-transform duration-300",
   },
   {
     image: "/images/section2/img04.png",
-    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[135.78px] md:w-[234.03px]">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center">
         <span class="text-purple">Servicio.</span>
         <span class="text-black">
           Darse sin buscar nada a cambio, hacer favores, dedicar tiempo.
@@ -237,30 +240,32 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
       </p>`,
     text: "Servicio. Darse sin buscar nada a cambio, hacer favores, dedicar tiempo.",
     frameWidth: "w-[154.35px] md:w-[266.03px]",
-    frameHeight: "h-[155.45px] md:h-[253.87px]",
+    frameHeight: "h-[210px] md:h-[253.87px] lg:h-[270px]",
     imgWidth: "w-[135.78px] md:w-[234.03px]",
     imgHeight: "h-[91.6px] md:h-[157.87px]",
     bg: "bg-white lg:hover:bg-yellow",
-    className: "col-span-1",
+    className:
+      "col-span-1 lg:hover:scale-105 transition-transform duration-300",
   },
   {
     image: "/images/section2/img05.png",
-    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[143.43px] md:w-[247.21px]">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center">
         <span class="text-white lg:text-purple">Algo que nos hace mejores.</span>
         <span class="text-white lg:text-black"> Que no se rebaja a ser colega.</span>
       </p>`,
     text: "Algo que nos hace mejores. Que no se rebaja a ser colega.",
     rotation: 12.78,
     frameWidth: "w-[162px] md:w-[279.21px]",
-    frameHeight: "h-[171.5px] md:h-[293.54px]",
+    frameHeight: "h-[210px] md:h-[270px] lg:h-[300px]",
     imgWidth: "w-[143.43px] md:w-[247.21px]",
     imgHeight: "h-[107.65px] md:h-[185.54px]",
     bg: "bg-purple lg:bg-white lg:hover:bg-yellow",
-    className: "col-span-1",
+    className:
+      "col-span-1 lg:hover:scale-105 transition-transform duration-300",
   },
   {
     image: "/images/section2/img06.png",
-    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[247.97px]">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center">
         <span class="text-purple">Una amistad es abierta.</span>
         <span class="text-black">
           No se cierra, no es posesiva, no se diluye al compartirla.
@@ -269,40 +274,43 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
     text: "Una amistad es abierta. No se cierra, no es posesiva, no se diluye al compartirla.",
     rotation: -6.22,
     frameWidth: "w-[306.97px]",
-    frameHeight: "h-[302.94px]",
+    frameHeight: "h-[302.94px] lg:h-[330.94px]",
     imgWidth: "w-[274.97px]",
     imgHeight: "h-[206.94px]",
     bg: "bg-white lg:hover:bg-yellow",
-    className: "col-span-2 md:col-span-2 lg:col-span-1",
+    className:
+      "col-span-2 md:col-span-2 lg:col-span-1 lg:hover:scale-105 transition-transform duration-300",
   },
   {
     image: "/images/section2/img07.png",
-    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[145.85px] md:w-[234.03px]">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center">
         <span class="text-purple">Una amistad es gratis.</span>
         <span class="text-black">Comienza dónde termina el interés.</span>
       </p>`,
     text: "Una amistad es gratis. Comienza dónde termina el interés.",
     frameWidth: "w-[166.22px] md:w-[266.03px]",
-    frameHeight: "h-[171.8px] md:h-[265.87px]",
+    frameHeight: "h-[210px] md:h-[240px] lg:h-[270px]",
     imgWidth: "w-[145.85px] md:w-[234.03px]",
     imgHeight: "h-[102.35px] md:h-[157.87px]",
     bg: "bg-yellow lg:bg-white lg:hover:bg-yellow",
-    className: "col-span-1",
+    className:
+      "col-span-1 lg:hover:scale-105 transition-transform duration-300",
   },
   {
     image: "/images/section2/img08.png",
-    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center w-[143.15px] md:w-[229px]">
+    element: `<p class="text-m-bold-small lg:text-l-bold-small text-center">
         <span class="text-purple">No se consigue a golpe de clicks.</span>
         <span class="text-black">Hace falta salir y lleva tiempo.</span>
       </p>`,
     text: "No se consigue a golpe de clicks. Hace falta salir y lleva tiempo.",
     rotation: -6.16,
     frameWidth: "w-[163.51px] md:w-[261px]",
-    frameHeight: "h-[218.85px] md:h-[343px]",
+    frameHeight: "h-[260px] md:h-[310px] lg:h-[343px]",
     imgWidth: "w-[143.15px] md:w-[229px]",
     imgHeight: "h-[152.29px] md:h-[235px]",
     bg: "bg-white lg:hover:bg-yellow",
-    className: "col-span-1",
+    className:
+      "col-span-1 lg:hover:scale-105 transition-transform duration-300",
   },
 ];
 
