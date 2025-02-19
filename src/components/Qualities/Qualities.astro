@@ -54,9 +54,11 @@ import { ACCORDION_ITEMS } from "@/consts/index"
       const content = trigger.nextElementSibling
       const isExpanded = trigger.getAttribute("aria-expanded") === "true"
       const icon = trigger.querySelector("img")
+      const accordionBlock = trigger.closest("#accordion-block")
       // Close all other accordions
       document.querySelectorAll("[aria-controls]").forEach((t) => {
         if (t !== trigger) {
+          const otherAccordionBlock = t.closest("#accordion-block")
           t.setAttribute("aria-expanded", "false")
           t.nextElementSibling?.classList.remove(
             "grid-rows-[1fr]",
