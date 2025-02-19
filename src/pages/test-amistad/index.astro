@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro"
 import { FRIENDSHIP_TEST } from "@/consts/index"
+import Frame from "@/components/Frame/Frame.astro"
 ---
 
 <Layout>
@@ -58,16 +59,35 @@ import { FRIENDSHIP_TEST } from "@/consts/index"
 
         <button
           type="submit"
-          class="w-full py-4 bg-purple text-white text-l-bold rounded-full hover:bg-purple/90 transition-colors cursor-pointer"
+          class="w-full py-3 md:py-4 bg-purple text-white text-m-bold md:text-l-bold rounded-full hover:bg-purple/90 transition-colors cursor-pointer"
         >
           Ver Resultado
         </button>
       </form>
     </div>
 
-    <div id="testResults" class="hidden max-w-3xl mx-auto mt-10 p-8 bg-white rounded-lg shadow-md">
-      <h2 class="text-l-bold md:text-xxxl-heavy text-purple mb-4" id="resultTitle"></h2>
-      <p class="text-m-regular md:text-l-regular" id="resultDescription"></p>
+    <div 
+      id="testResults" 
+      class="hidden w-full h-full flex-col lg:flex-row items-center justify-center py-20"
+    >
+      <Frame 
+        dimensions={{ width: "w-[300px] md:w-[500px]", height: "h-[200px] md:h-[400px]" }}
+        bg="bg-yellow"
+        padding={{ top: "pt-3", bottom: "pb-2", lateral: "px-3" }}
+        rotation={-2.74}
+      >
+        <img
+            id="friendship-image"
+            class="w-[300px] h-[170px] md:w-[470px] md:h-[360px] object-cover"
+            src={'/images/hero/img01.png'}
+            alt="Friendship illustration"
+          />
+      </Frame>
+      <div class="flex flex-col items-start justify-items-start lg:w-1/3 mx-10 my-10">
+        <h2 class="text-xxxl-heavy text-black uppercase">Amistad</h2>
+        <h2 id="resultTitle" class="text-xxxl-heavy text-purple mb-4 uppercase"></h2>
+        <p class="text-l-regular" id="resultDescription"></p>
+      </div>
     </div>
   </main>
 </Layout>
@@ -84,17 +104,9 @@ import { FRIENDSHIP_TEST } from "@/consts/index"
     
     if (!form || !resultsDiv || !resultTitle || !resultDescription || !testContainer) return;
     
-    // Get all answers
     const formData = new FormData(form);
     const answers = Array.from(formData.values());
     
-    // Make sure all questions are answered
-    if (answers.length < 16) {
-      alert('Por favor, responde todas las preguntas');
-      return;
-    }
-
-    // Count responses
     const counts: Record<string, number> = {
       'A': 0,
       'B': 0,
@@ -108,7 +120,6 @@ import { FRIENDSHIP_TEST } from "@/consts/index"
       }
     });
 
-    // Find most common answer
     let maxCount = 0;
     let mostCommon = 'A';
     
@@ -119,22 +130,21 @@ import { FRIENDSHIP_TEST } from "@/consts/index"
       }
     });
 
-    // Get result from TEST_RESULTS
     const results = {
       'A': {
-        title: "Amistad Profunda y Madura",
+        title: "Profunda y Madura",
         description: "Tienes una amistad sólida, basada en la confianza, la honestidad y el apoyo mutuo. Eres un amigo atento, capaz de resolver conflictos y compartir tanto los buenos como los malos momentos. Valoras la amistad como un vínculo importante y te esfuerzas por mantenerla a lo largo del tiempo."
       },
       'B': {
-        title: "Amistad Cercana en Desarrollo",
+        title: "Cercana en Desarrollo",
         description: "Tus amistades son significativas y tienes una buena base para relaciones profundas, aunque puede que algunas áreas necesiten más atención. Quizás a veces te cuesta abrirte por completo o gestionar conflictos, pero te esfuerzas en ser un buen amigo. Estás en el camino de fortalecer aún más estas relaciones."
       },
       'C': {
-        title: "Amistad Superficial o en Construcción",
+        title: "Superficial o en Construcción",
         description: "Aunque tienes buenas intenciones, puede que tus amistades sean más superficiales o que aún no estén completamente consolidadas. Podrías trabajar en aspectos como la comunicación abierta, la empatía o la resolución de conflictos para construir relaciones más sólidas y significativas."
       },
       'D': {
-        title: "Amistad Distante o en Riesgo",
+        title: "Distante o en Riesgo",
         description: "Es posible que tus relaciones de amistad sean un poco distantes o estén en una etapa difícil. Puede que evites temas profundos o no priorices resolver conflictos. Esto podría ser por desinterés o por falta de tiempo. Reflexionar sobre la importancia de la amistad y cómo fortalecerla podría ayudarte a mejorar estas relaciones."
       }
     };
@@ -146,11 +156,11 @@ import { FRIENDSHIP_TEST } from "@/consts/index"
       resultDescription.textContent = result.description;
       testContainer.classList.add('hidden');
       resultsDiv.classList.remove('hidden');
+      resultsDiv.classList.add('flex');
       resultsDiv.scrollIntoView({ behavior: 'smooth' });
     }
   }
 
-  // Add event listener after DOM is loaded
   document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('friendshipTest');
     if (form) {
