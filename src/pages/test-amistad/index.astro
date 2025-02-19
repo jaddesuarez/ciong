@@ -68,7 +68,7 @@ import Frame from "@/components/Frame/Frame.astro"
 
     <div 
       id="testResults" 
-      class="hidden w-full h-full flex-col lg:flex-row items-center justify-center py-20"
+      class="hidden w-full h-full flex-col lg:flex-row items-center justify-center py-10 md:py-20"
     >
       <Frame 
         dimensions={{ width: "w-[300px] md:w-[500px]", height: "h-[200px] md:h-[400px]" }}
@@ -84,8 +84,8 @@ import Frame from "@/components/Frame/Frame.astro"
           />
       </Frame>
       <div class="flex flex-col items-start justify-items-start lg:w-1/3 mx-10 my-10">
-        <h2 class="text-xxxl-heavy text-black uppercase">Amistad</h2>
-        <h2 id="resultTitle" class="text-xxxl-heavy text-purple mb-4 uppercase"></h2>
+        <h2 class="text-large-heavy md:text-xxxl-heavy text-black uppercase">Amistad</h2>
+        <h2 id="resultTitle" class="text-large-heavy md:text-xxxl-heavy text-purple mb-4 uppercase"></h2>
         <p class="text-l-regular" id="resultDescription"></p>
       </div>
     </div>
