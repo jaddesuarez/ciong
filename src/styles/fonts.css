@@ -1,103 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --font-family-sans: 'Work Sans', sans-serif;
-    
-    /* Small - 12px */
-    --text-s-medium: 12px;
-    --text-s-medium--line-height: 20px;
-    --text-s-medium--font-weight: 600;
+  --font-family-sans: "Work Sans", sans-serif;
 
-    --text-s-heavy: 12px;
-    --text-s-heavy--line-height: 24px;
-    --text-s-heavy--font-weight: 800;
-    --text-s-heavy--letter-spacing: -1.2px;
+  /* Small - 12px */
+  --text-s-medium: 12px;
+  --text-s-medium--line-height: 20px;
+  --text-s-medium--font-weight: 600;
 
-    /* Medium - 16px */
-    --text-m-regular: 16px;
-    --text-m-regular--line-height: 20px;
-    --text-m-regular--font-weight: 500;
-    --text-m-regular--letter-spacing: -0.5px;
+  --text-s-heavy: 12px;
+  --text-s-heavy--line-height: 24px;
+  --text-s-heavy--font-weight: 800;
+  --text-s-heavy--letter-spacing: -1.2px;
 
-    /* buscar tipografía repetida... */
-    --text-m-regular: 16px;
-    --text-m-regular--line-height: 26px;
-    --text-m-regular--font-weight: 500;
-    --text-m-regular--letter-spacing: -1px;
+  /* Medium - 16px */
+  --text-m-regular: 16px;
+  --text-m-regular--line-height: 20px;
+  --text-m-regular--font-weight: 500;
+  --text-m-regular--letter-spacing: -0.5px;
 
-    --text-m-bold-small: 16px;
-    --text-m-bold-small--line-height: 16px;
-    --text-m-bold-small--font-weight: 700;
-    --text-m-bold-small--letter-spacing: -1px;
+  /* buscar tipografía repetida... */
+  --text-m-regular: 16px;
+  --text-m-regular--line-height: 26px;
+  --text-m-regular--font-weight: 500;
+  --text-m-regular--letter-spacing: -1px;
 
-    /* Large - 20px */
-    --text-l-regular: 20px;
-    --text-l-regular--line-height: 26px;
-    --text-l-regular--font-weight: 500;
-    --text-l-regular--letter-spacing: -0.5px;
+  --text-m-bold-small: 16px;
+  --text-m-bold-small--line-height: 18px;
+  --text-m-bold-small--font-weight: 700;
+  --text-m-bold-small--letter-spacing: -1px;
 
-    --text-l-regular-small: 20px;
-    --text-l-regular-small--line-height: 18px;
-    --text-l-regular-small--font-weight: 500;
-    --text-l-regular-small--letter-spacing: -0.5px;
+  /* Large - 20px */
+  --text-l-regular: 20px;
+  --text-l-regular--line-height: 26px;
+  --text-l-regular--font-weight: 500;
+  --text-l-regular--letter-spacing: -0.5px;
 
-    --text-l-bold: 20px;
-    --text-l-bold--line-height: 26px;
-    --text-l-bold--font-weight: 700;
-    --text-l-bold--letter-spacing: -1px;
-    
-    --text-l-bold-small: 20px;
-    --text-l-bold-small--line-height: 20px;
-    --text-l-bold-small--font-weight: 700;
-    --text-l-bold-small--letter-spacing: -1px;
+  --text-l-regular-small: 20px;
+  --text-l-regular-small--line-height: 18px;
+  --text-l-regular-small--font-weight: 500;
+  --text-l-regular-small--letter-spacing: -0.5px;
 
-    --text-l-heavy: 20px;
-    --text-l-heavy--line-height: 18px;
-    --text-l-heavy--font-weight: 800;
-    --text-l-heavy--letter-spacing: -0.6px;
+  --text-l-bold: 20px;
+  --text-l-bold--line-height: 26px;
+  --text-l-bold--font-weight: 700;
+  --text-l-bold--letter-spacing: -1px;
 
-    --text-l-heavy-tall: 20px;
-    --text-l-heavy-tall--line-height: 40px;
-    --text-l-heavy-tall--font-weight: 800;
-    --text-l-heavy-tall--letter-spacing: -2px;
+  --text-l-bold-small: 20px;
+  --text-l-bold-small--line-height: 20px;
+  --text-l-bold-small--font-weight: 700;
+  --text-l-bold-small--letter-spacing: -1px;
 
-    /* Large - 22px */
-    --text-l-heavy-tall-small-mobile: 21px;
-    --text-l-heavy-tall-small-mobile--line-height: 24px;
-    --text-l-heavy-tall-small-mobile--font-weight: 800;
-    --text-l-heavy-tall-small-mobile--letter-spacing: -1.2px;
-    
-    --text-l-heavy-tall-small: 22px;
-    --text-l-heavy-tall-small--line-height: 20px;
-    --text-l-heavy-tall-small--font-weight: 800;
-    --text-l-heavy-tall-small--letter-spacing: -0.5px;
+  --text-l-heavy: 20px;
+  --text-l-heavy--line-height: 20px;
+  --text-l-heavy--font-weight: 800;
+  --text-l-heavy--letter-spacing: -0.6px;
 
-    /* Extra Large - 24px */
-    --text-xl-bold: 24px;
-    --text-xl-bold--line-height: 24px;
-    --text-xl-bold--font-weight: 700;
-    --text-xl-bold--letter-spacing: -1px;
+  --text-l-heavy-tall: 20px;
+  --text-l-heavy-tall--line-height: 40px;
+  --text-l-heavy-tall--font-weight: 800;
+  --text-l-heavy-tall--letter-spacing: -2px;
 
-    /* XXL - 30px */
-    --text-xxl-heavy: 30px;
-    --text-xxl-heavy--line-height: 26px;
-    --text-xxl-heavy--font-weight: 800;
-    --text-xxl-heavy--letter-spacing: -0.5px;
+  /* Large - 22px */
+  --text-l-heavy-tall-small-mobile: 21px;
+  --text-l-heavy-tall-small-mobile--line-height: 24px;
+  --text-l-heavy-tall-small-mobile--font-weight: 800;
+  --text-l-heavy-tall-small-mobile--letter-spacing: -1.2px;
 
-    /* XXXL - 40px */
-    --text-large-heavy: 36px;
-    --text-large-heavy--line-height: 36px;
-    --text-large-heavy--font-weight: 800;
-    --text-large-heavy--letter-spacing: -2px;
+  --text-l-heavy-tall-small: 22px;
+  --text-l-heavy-tall-small--line-height: 20px;
+  --text-l-heavy-tall-small--font-weight: 800;
+  --text-l-heavy-tall-small--letter-spacing: -0.5px;
 
-    --text-xxxl-heavy: 40px;
-    --text-xxxl-heavy--line-height: 40px;
-    --text-xxxl-heavy--font-weight: 800;
-    --text-xxxl-heavy--letter-spacing: -2px;
+  /* Extra Large - 24px */
+  --text-xl-bold: 24px;
+  --text-xl-bold--line-height: 24px;
+  --text-xl-bold--font-weight: 700;
+  --text-xl-bold--letter-spacing: -1px;
 
-    /* Display - 80px */
-    --text-display-heavy: 80px;
-    --text-display-heavy--line-height: 60px;
-    --text-display-heavy--font-weight: 800;
-    --text-display-heavy--letter-spacing: -2px;
+  /* XXL - 30px */
+  --text-xxl-heavy: 30px;
+  --text-xxl-heavy--line-height: 26px;
+  --text-xxl-heavy--font-weight: 800;
+  --text-xxl-heavy--letter-spacing: -0.5px;
+
+  /* XXXL - 40px */
+  --text-large-heavy: 36px;
+  --text-large-heavy--line-height: 36px;
+  --text-large-heavy--font-weight: 800;
+  --text-large-heavy--letter-spacing: -2px;
+
+  --text-xxxl-heavy: 40px;
+  --text-xxxl-heavy--line-height: 40px;
+  --text-xxxl-heavy--font-weight: 800;
+  --text-xxxl-heavy--letter-spacing: -2px;
+
+  /* Display - 80px */
+  --text-display-heavy: 80px;
+  --text-display-heavy--line-height: 60px;
+  --text-display-heavy--font-weight: 800;
+  --text-display-heavy--letter-spacing: -2px;
 }
