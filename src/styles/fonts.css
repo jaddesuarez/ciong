@@ -36,6 +36,11 @@
   --text-l-regular--font-weight: 500;
   --text-l-regular--letter-spacing: -0.5px;
 
+  --text-l-regular-small-mobile: 16x;
+  --text-l-regular-small-mobile--line-height: 18px;
+  --text-l-regular-small-mobile--font-weight: 500;
+  --text-l-regular-small-mobile--letter-spacing: -0.5px;
+
   --text-l-regular-small: 20px;
   --text-l-regular-small--line-height: 18px;
   --text-l-regular-small--font-weight: 500;

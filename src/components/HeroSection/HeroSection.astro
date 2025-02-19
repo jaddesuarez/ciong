@@ -4,22 +4,31 @@ import "./HeroSection.styles.css"
 import { DESCRIPTIONS, HERO_IMAGES } from "@/consts/index"
 ---
 
-<section id="hero" class="flex flex-col gap-20 py-6 px-2 md:px-4 lg:pb-[100px] lg:px-[80px] lg:pt-[50px]">
-  <div class="hero-content flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-40 items-center justify-center">
+<section
+  id="hero"
+  class="flex flex-col gap-20 pb-[60px] pt-[5px] px-5 md:px-4 lg:pb-[100px] lg:px-[80px] lg:pt-[50px]"
+>
+  <div
+    class="hero-content flex flex-col md:flex-row gap-10 md:gap-6 lg:gap-40 items-center justify-center"
+  >
     <img
       src="/images/hero/hero-text.svg"
       alt="imagen de la página"
       class="max-w-[350px] lg:max-w-[750px]"
     />
     <div>
-      <h1 class="text-l-heavy-tall-small my-3 uppercase">
+      <h1 class="text-l-heavy-tall-small mb-3 uppercase">
         ¿Qué es la amistad?
       </h1>
-      {
-        DESCRIPTIONS.map((description) => (
-          <p class="text-l-regular-small">{description}</p>
-        ))
-      }
+      <div class="flex flex-col gap-[6px]">
+        {
+          DESCRIPTIONS.map((description) => (
+            <p class="text-l-regular-small-mobile md:text-l-regular-small">
+              {description}
+            </p>
+          ))
+        }
+      </div>
     </div>
   </div>
   <div class="hidden lg:flex gap-20 w-full justify-center">
@@ -33,7 +42,11 @@ import { DESCRIPTIONS, HERO_IMAGES } from "@/consts/index"
           rotation={image.rotation}
           bg={image.bg}
         >
-          <img src={image.image} alt={image.alt} class={`${image.imgWidth} ${image.imgHeight} object-cover`} />
+          <img
+            src={image.image}
+            alt={image.alt}
+            class={`${image.imgWidth} ${image.imgHeight} object-cover`}
+          />
         </Frame>
       ))
     }

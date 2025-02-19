@@ -37,6 +37,16 @@
   --text-l-regular--font-weight: var(--text-l-regular--font-weight);
   --text-l-regular--letter-spacing: var(--text-l-regular--letter-spacing);
 
+  --text-l-regular-small: var(--text-l-regular-small);
+  --text-l-regular-small--line-height: var(--text-l-regular-small--line-height);
+  --text-l-regular-small--font-weight: var(--text-l-regular-small--font-weight);
+  --text-l-regular-small--letter-spacing: var(--text-l-regular-small--letter-spacing);
+
+  --text-l-regular-small-mobile: var(--text-l-regular-small-mobile);
+  --text-l-regular-small-mobile--line-height: var(--text-l-regular-small-mobile--line-height);
+  --text-l-regular-small-mobile--font-weight: var(--text-l-regular-small-mobile--font-weight);
+  --text-l-regular-small-mobile--letter-spacing: var(--text-l-regular-small-mobile--letter-spacing);
+
   --text-l-bold: var(--text-l-bold);
   --text-l-bold--line-height: var(--text-l-bold--line-height);
   --text-l-bold--font-weight: var(--text-l-bold--font-weight);
