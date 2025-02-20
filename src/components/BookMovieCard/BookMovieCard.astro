@@ -3,24 +3,13 @@ interface Props {
   image: string;
   title: string;
   info: string;
-  link?: string;  // Optional link for download
 }
 
-const { image, title, info, link } = Astro.props;
+const { image, title, info } = Astro.props;
 ---
 
 <div class="flex flex-col items-center">  
-    {link ? (
-      <a href={link} download class="flex flex-col items-center group cursor-pointer">
-        <img src={image} alt={title} class="mb-6 transition-transform group-hover:scale-105"/>
-        <p class="text-m-bold-small md:text-l-bold text-black group-hover:underline text-center">{title}</p>
-        <p class="text-m-regular text-black text-center">{info}</p>
-      </a>
-    ) : (
-      <>
-        <img src={image} alt={title} class="mb-6"/>
-        <p class="text-m-bold-small md:text-l-bold text-black text-center">{title}</p>
-        <p class="text-m-regular text-black text-center">{info}</p>
-      </>
-    )}
+  <img src={image} alt={title} class="mb-6"/>
+  <p class="text-m-bold-small md:text-l-bold text-black text-center">{title}</p>
+  <p class="text-m-regular text-black text-center">{info}</p>
 </div>

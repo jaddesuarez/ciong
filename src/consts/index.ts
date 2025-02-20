@@ -202,10 +202,10 @@ export const FRIENDSHIP_IMAGES: IFriendshipImage[] = [
   {
     image: "/images/section2/img02.png",
     element: `<p class="text-m-bold-small lg:text-l-bold-small text-center">
-        <span class="text-purple">Un premio de Lotería.</span>
+        <span class="text-purple">Un premio de lotería.</span>
         <span class="text-black">A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.</span>
       </p>`,
-    text: "Un premio de Lotería. A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.",
+    text: "Un premio de lotería. A veces se gana y a veces se pierde, pero sólo hay premio para el que juega.",
     frameWidth: "w-[180.61px] md:w-[306.97px]",
     frameHeight: "h-[280.17px] md:h-[330.66px] lg:h-[370.66px]",
     imgWidth: "w-[151.93px] md:w-[274.97px]",

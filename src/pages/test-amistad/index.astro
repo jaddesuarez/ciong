@@ -79,7 +79,7 @@ import Frame from "@/components/Frame/Frame.astro"
         <img
             id="friendship-image"
             class="w-[300px] h-[170px] md:w-[470px] md:h-[360px] object-cover"
-            src={'/images/hero/img01.png'}
+            src=''
             alt="Friendship illustration"
           />
       </Frame>
@@ -101,7 +101,7 @@ import Frame from "@/components/Frame/Frame.astro"
     const resultsDiv = document.getElementById('testResults');
     const resultTitle = document.getElementById('resultTitle');
     const resultDescription = document.getElementById('resultDescription');
-    
+    const friendshipImage = document.getElementById('friendship-image') as HTMLImageElement;
     if (!form || !resultsDiv || !resultTitle || !resultDescription || !testContainer) return;
     
     const formData = new FormData(form);
@@ -133,19 +133,23 @@ import Frame from "@/components/Frame/Frame.astro"
     const results = {
       'A': {
         title: "Profunda y Madura",
-        description: "Tienes una amistad sólida, basada en la confianza, la honestidad y el apoyo mutuo. Eres un amigo atento, capaz de resolver conflictos y compartir tanto los buenos como los malos momentos. Valoras la amistad como un vínculo importante y te esfuerzas por mantenerla a lo largo del tiempo."
+        description: "Tienes una amistad sólida, basada en la confianza, la honestidad y el apoyo mutuo. Eres un amigo atento, capaz de resolver conflictos y compartir tanto los buenos como los malos momentos. Valoras la amistad como un vínculo importante y te esfuerzas por mantenerla a lo largo del tiempo.",
+        img: "/images/hero/img03.png"
       },
       'B': {
         title: "Cercana en Desarrollo",
-        description: "Tus amistades son significativas y tienes una buena base para relaciones profundas, aunque puede que algunas áreas necesiten más atención. Quizás a veces te cuesta abrirte por completo o gestionar conflictos, pero te esfuerzas en ser un buen amigo. Estás en el camino de fortalecer aún más estas relaciones."
+        description: "Tus amistades son significativas y tienes una buena base para relaciones profundas, aunque puede que algunas áreas necesiten más atención. Quizás a veces te cuesta abrirte por completo o gestionar conflictos, pero te esfuerzas en ser un buen amigo. Estás en el camino de fortalecer aún más estas relaciones.",
+        img: "/images/TypesOfFriendShip/img02.png"
       },
       'C': {
         title: "Superficial o en Construcción",
-        description: "Aunque tienes buenas intenciones, puede que tus amistades sean más superficiales o que aún no estén completamente consolidadas. Podrías trabajar en aspectos como la comunicación abierta, la empatía o la resolución de conflictos para construir relaciones más sólidas y significativas."
+        description: "Aunque tienes buenas intenciones, puede que tus amistades sean más superficiales o que aún no estén completamente consolidadas. Podrías trabajar en aspectos como la comunicación abierta, la empatía o la resolución de conflictos para construir relaciones más sólidas y significativas.",
+        img: "/images/hero/img01.png"
       },
       'D': {
         title: "Distante o en Riesgo",
-        description: "Es posible que tus relaciones de amistad sean un poco distantes o estén en una etapa difícil. Puede que evites temas profundos o no priorices resolver conflictos. Esto podría ser por desinterés o por falta de tiempo. Reflexionar sobre la importancia de la amistad y cómo fortalecerla podría ayudarte a mejorar estas relaciones."
+        description: "Es posible que tus relaciones de amistad sean un poco distantes o estén en una etapa difícil. Puede que evites temas profundos o no priorices resolver conflictos. Esto podría ser por desinterés o por falta de tiempo. Reflexionar sobre la importancia de la amistad y cómo fortalecerla podría ayudarte a mejorar estas relaciones.",
+        img: "/images/TypesOfFriendShip/img08.png"
       }
     };
 
@@ -158,6 +162,9 @@ import Frame from "@/components/Frame/Frame.astro"
       resultsDiv.classList.remove('hidden');
       resultsDiv.classList.add('flex');
       resultsDiv.scrollIntoView({ behavior: 'smooth' });
+      if (friendshipImage) {
+        friendshipImage.src = result.img;
+      }
     }
   }
 
